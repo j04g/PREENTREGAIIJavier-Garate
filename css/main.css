@@ -194,6 +194,7 @@
 
     .tooltip:hover .tooltiptext {
     visibility: visible;
+    z-index: 1;
         }
 
                         /*tootlip INDEX wp*/
@@ -351,6 +352,20 @@
 
     }
 
+    .animations4{
+        width: 40%;
+        height: 100px;
+        position:relative;
+        animation-name: corredor2;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-timing-function: linear;
+        color: red;
+        text-shadow: 20px 20px 40px #000000;
+
+    }
+
     @keyframes corredor{
         0%{color:red;left:0px; top:0px}
         20%{color:rgb(215, 247, 102);left:4px; top:0px}
@@ -358,6 +373,16 @@
         60%{color:rgb(68, 38, 243);left:120px; top:0px}
         80%{color:rgb(246, 246, 28);left:160px; top:0px}
         100%{color:rgb(254, 2, 2);left:190px; top:0px}
+        
+    }
+
+    @keyframes corredor2{
+        0%{color:red;left:145px; top:0px}
+        20%{color:rgb(215, 247, 102);left:290px; top:0px}
+        40%{color:rgb(43, 255, 0);left:410px; top:0px}
+        60%{color:rgb(68, 38, 243);left:550px; top:0px}
+        80%{color:rgb(246, 246, 28);left:690px; top:0px}
+        100%{color:rgb(254, 2, 2);left:830px; top:0px}
         
     }
 
@@ -692,7 +717,7 @@ footer div img{
 .contenedor_pagina_carta{
     display: grid;
     grid-template-columns: 1fr 3fr;
-    grid-template-rows: 1fr 2.75fr 2fr 2fr 2.2fr 0.7fr;
+    grid-template-rows: 1fr 2.7fr 2fr 2fr 2.2fr 0.7fr;
     grid-template-areas: 
     "header nav"
     "main main"
@@ -716,6 +741,7 @@ footer div img{
     background-image: url("../images/carta\ fachada\ principal.webp") ;
     background-repeat: no-repeat;
     background-position: center;
+    z-index: 2;
     
     
     
@@ -726,12 +752,13 @@ footer div img{
     color: white;
     background-color: rgb(20, 9, 81);
     background-image: radial-gradient(circle, rgb(255, 0, 0),rgb(243, 194, 194));
-    padding: 30px;
+    padding: 20px;
     width: 375px;
     height: 420px;
     z-index: 2;
     position: relative;
-    left: 75px;
+    left: 85px;
+    z-index: 2;
   
     }
 
@@ -830,7 +857,8 @@ padding: 60px;
     width: 520px;
     height: 520px;
     object-fit: cover;
-    padding: 30px 30px 60px 30px;   
+    padding: 30px 30px 60px 30px;  
+    font-family:'Poppins', sans-serif; 
     
 
 }
@@ -1047,8 +1075,7 @@ padding: 60px;
 
 .contenedor_historia_body_main{
     grid-area: main;
-    display: flex;
-    flex-direction: column;
+    
     background-image: url("../images/comedor.jpg"); 
     background-size: cover;
     background-repeat: no-repeat;
@@ -1060,13 +1087,20 @@ padding: 60px;
     
     }
     
-    
+.historia_main_carousel{
+    display:flex;
+    height: 400px;
+    width: 200px;
+    position: relative;
+    top: 200px;
+
+}  
 
 .historia_main_i{ 
     display: flex;
     flex-direction: column;
     background-image: linear-gradient(to right, rgb(255, 0, 0),rgb(243, 194, 194));
-    height: 200px;
+    height: 250px;
     width: 100vw;
     justify-content: flex-start;
     padding: 20px;
@@ -1076,12 +1110,11 @@ padding: 60px;
     top: 400px;
     }
 
-
-
  
 .contenedor_historia_section1{
     grid-area: section1;
     display: flex;
+    flex-direction: column;
 }
 
 
@@ -1089,7 +1122,7 @@ padding: 60px;
     display: flex;
     flex-direction: column;
     background-image: linear-gradient(to left, rgb(22, 22, 222),rgb(174, 174, 249));
-    height: 200px;
+    height: 250px;
     width: 100%;
     justify-content: normal;
     padding: 20px;
@@ -1099,6 +1132,26 @@ padding: 60px;
     position: relative;
     top: 600px;
     }
+
+.contenedor_historia_section1_carousel{
+       
+    height: 400px;
+    width: 350px;
+    position: relative;
+    top: 700px;
+    left: 580px;
+}
+
+.historia_section1_carousel_item{
+    height: 400px;
+    width: 350px;
+    object-fit: cover;
+}
+
+.historia_section1_carousel_text{
+   font-family: 'Poppins', sans-serif;
+   color: white;
+}
 
 .contenedor_historia_section2{
     grid-area: section2;
@@ -1157,7 +1210,7 @@ color: white;
 
 .historia_section2_i h2{
 width: fit-content;
-font-family: 'Poppins', sans-serif, italic; font-weight: 100;
+font-family: 'Poppins', sans-serif; font-weight: 100;
 font-size: 25px;
 color: white;
 }
@@ -1171,7 +1224,7 @@ color: white;
 }
 
 .historia_card{
-    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.2);
   max-width: 300px;
   margin: auto;
   text-align: center;
@@ -1220,7 +1273,311 @@ color: white;
 }
 
 
+/*Propriedades por etiquetas página FRANQUICIAS*/
 
+
+.contenedor_pagina_franquicias{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 1fr 6fr 0.7fr;
+    grid-template-areas: 
+    "header nav"
+    "main main"
+    "section1 section1"
+    "footer footer";
+    row-gap: 30px;
+      
+
+}
+
+/*MAIN & SECTION 1*/
+
+
+
+.contenedor_franquicias_main{
+    grid-area: main;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+    
+.franquicias_dashboard_estadísticas1{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif; 
+    font-weight: 100;
+    font-size: 25px;
+    background-image:  linear-gradient(to left, rgb(222, 22, 22),rgb(174, 174, 249));
+    align-items: center;
+    color: white;
+    height: 300px;
+    width: 72%;
+    justify-content: center;
+    
+    align-items: center;
+    align-content: center;
+    overflow: auto;
+    float:inline-start;
+    position: absolute;
+    top: 250px;
+    left: 30px;
+    border-radius: 10px;
+    float: inline-end;
+    z-index: 2;
+
+}
+    
+.contenedor_franquicias_section1{
+    grid-area: section1;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: fit-content;
+    align-items: flex-start;
+    position: relative;
+    bottom: 0px;
+}
+
+
+.contenedor_franquicias_main_hijo1{
+    display: flex;
+    
+
+    
+}
+
+.contenedor_franquicias_main_hijo2{
+    display: flex;
+}
+
+
+
+
+
+
+
+/*FLIP - CARD - DASHOBOARD*/
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    position: absolute;
+    top: 250px;
+    right: 30px;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    font-family: 'Poppins', sans-serif;
+font-size: 18px;
+  }
+
+  .flip-card-front, .flip-card-back p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+  }
+  
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  .flip-card-back {
+    background-color: #2980b9;
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+
+.dashboard_estadísticas{
+    width: 700px;
+    position: relative;
+    bottom: 100px;
+}
+
+.disable_button{
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+    
+
+/*Ventanas - galería*/
+    
+
+    :root {
+        --color: #3c3163;
+        --transition-time: 0.5s;
+      }
+    
+      a {
+        color: inherit;
+      }
+      
+      .cards-wrapper {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 4rem;
+        padding: 4rem;
+        margin: 0 auto;
+        width: max-content;
+        height: 50%;
+      }
+      
+      .card {
+        font-family: 'Heebo';
+        --bg-filter-opacity: 0.5;
+        background-image: linear-gradient(rgba(0,0,0,var(--bg-filter-opacity)),rgba(0,0,0,var(--bg-filter-opacity))), var(--bg-img);
+        height: 20em;
+        width: 15em;
+        font-size: 1.5em;
+        color: white;
+        border-radius: 1em;
+        padding: 1em;
+        /*margin: 2em;*/
+        display: flex;
+        align-items: flex-end;
+        background-size: cover;
+        background-position: center;
+        box-shadow: 0 0 5em -1em black;
+        transition: all, var(--transition-time);
+        position: relative;
+        overflow: hidden;
+        border: 10px solid #ccc;
+        text-decoration: none;
+      }
+      
+      .card:hover {
+        transform: rotate(0);
+      }
+      
+      .card h1 {
+        margin: 0;
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.5em;
+        line-height: 1.2em;
+      }
+      
+      .card p {
+        font-size: 0.75em;
+        font-family: 'Poppins', sans-serif;
+        margin-top: 0.5em;
+        line-height: 2em;
+      }
+      
+      .card .tags {
+        display: flex;
+        font-family: 'Poppins', sans-serif;
+      }
+      
+      .card .tags .tag {
+        font-size: 0.75em;
+        background: rgba(255,255,255,0.5);
+        border-radius: 0.3rem;
+        padding: 0 0.5em;
+        margin-right: 0.5em;
+        line-height: 1.5em;
+        transition: all, var(--transition-time);
+      }
+      
+      .card:hover .tags .tag {
+        background: var(--color);
+        color: white;
+      }
+      
+      .card .date {
+        position: absolute;
+        font-family: 'Poppins', sans-serif;
+        font-size: 8px;
+        top: 0;
+        right: 0;
+        font-size: 0.75em;
+        padding: 1em;
+        line-height: 1em;
+        opacity: .8;
+      }
+      
+      .card:before, .card:after {
+        content: '';
+        transform: scale(0);
+        transform-origin: top left;
+        border-radius: 50%;
+        position: absolute;
+        left: -50%;
+        top: -50%;
+        z-index: -5;
+        transition: all, var(--transition-time);
+        transition-timing-function: ease-in-out;
+      }
+      
+      .card:before {
+        background: #ddd;
+        width: 250%;
+        height: 250%;
+      }
+      
+      .card:after {
+        background: white;
+        width: 200%;
+        height: 200%;
+      }
+      
+      .card:hover {
+        color: var(--color);
+      }
+      
+      .card:hover:before, .card:hover:after {
+        transform: scale(1);
+      }
+      
+      .card-grid-space .num {
+        font-size: 3em;
+        margin-bottom: 1.2rem;
+        margin-left: 1rem;
+      }
+      
+      .info {
+        font-size: 1.2em;
+        display: flex;
+        padding: 1em 3em;
+        height: 3em;
+      }
+      
+      .info img {
+        height: 3em;
+        margin-right: 0.5em;
+      }
+      
+      
+
+
+  
+  
+  
+  
+  
 
 
 
