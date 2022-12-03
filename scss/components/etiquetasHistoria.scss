@@ -1,0 +1,99 @@
+                            /*Propriedades por etiquetas -página HISTORIA*/
+
+                            //HISTORIA.html - MAIN
+
+.historia_main_carousel{
+    display:flex;
+    height: 400px;
+    width: 200px;
+    position: relative;
+    top: 200px;
+}  
+
+.historia_main_i{ 
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(to right, rgb(255, 0, 0),rgb(243, 194, 194));
+    height: 250px;
+    width: 100vw;
+    justify-content: flex-start;
+    padding: 20px;
+    overflow: auto;
+    z-index: 1;
+    position: relative;
+    top: 400px;
+    }
+
+    .historia_main_i h2{
+        width: fit-content;
+        font-family: 'Poppins', sans-serif; font-weight: 100;
+        font-size: 25px;
+        color: white;
+            p{
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+        color: white;}
+        
+        }
+                            //HISTORIA.html - SECTION1
+
+.historia_section1_i{ 
+display: flex;
+flex-direction: column;
+background-image: linear-gradient(to left, rgb(22, 22, 222),rgb(174, 174, 249));
+height: 250px;
+width: 100%;
+justify-content: normal;
+padding: 20px;
+z-index: 1;
+overflow: auto;
+float:inline-start;
+position: relative;
+top: 600px;
+  
+    .historia_section1_i h2{
+    width: fit-content;
+    font-family: 'Poppins', sans-serif; font-weight: 100;
+    font-size: 25px;
+    color: white;}
+        .historia_section1_i p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color: white;}
+    
+    }
+    
+    
+                            //HISTORIA.html - SECTION2
+
+
+            
+.historia_section2_i{ 
+display: flex;
+flex-direction: column;
+background-image: linear-gradient(to left, rgb(22, 22, 222),rgb(250, 6, 6));
+height: 300px;
+width: 100vw;
+justify-content: normal;
+padding: 20px;
+z-index: 1;
+overflow: auto;
+float:inline-start;
+position: relative;
+top: 500px;
+h2{
+width: fit-content;
+font-family: 'Poppins', sans-serif; font-weight: 100;
+font-size: 25px;
+color: white;}
+p{
+font-family: 'Poppins', sans-serif, italic;
+font-size: 18px;
+color: white;}
+}
+
+
+
+
+            
+            

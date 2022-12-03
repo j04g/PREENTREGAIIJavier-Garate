@@ -1,0 +1,157 @@
+                            /*Propriedades por etiquetas -páginas INDEX*/
+
+
+
+                            //INDEX - HEADER
+
+h1{    
+    color: rgb(255, 255, 255);  text-transform: uppercase; font-size: 50px; font-family: 'Poppins', sans-serif; font-weight: 500; width: 500px;
+    animation:pulse;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    }
+
+                            // INDEX - NAV
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    color: white;  font-family: 'Poppins', sans-serif; align-items: center;
+     li{
+    display: flex;
+    color: white; display: inline-block; padding: 8px;
+    font-family: 'Poppins', sans-serif;
+    justify-content: center;
+    justify-items: baseline;
+    align-items: baseline;
+    align-content: center;
+    margin: 0px;
+    overflow: auto;}
+    
+    &:hover{
+
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;}
+
+    .highlight:hover{
+
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;}
+    }
+
+
+                            //INDEX - MAIN
+
+.index_main_i{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    background-color: rgb(20, 9, 81);
+    background-image: radial-gradient(circle, rgb(22, 22, 222),rgb(98, 107, 203));
+    padding: 30px;
+    width: 450px;
+    height: 400px;
+    overflow: auto;
+    z-index: 1;
+    left: 0px;
+    bottom: 0px;
+    }
+
+    
+
+main i h2{
+    font-family: 'Poppins', sans-serif; font-weight: 100;
+    font-size: 40px;
+    p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+}
+}
+
+
+                            // INDEX - Section1
+.contenedor_pagina_menu_section1 div{
+    width: 25%;
+    align-items: center;
+    align-content: center;
+ }
+
+
+                            // INDEX - Section2
+
+.contenedor_pagina_menu_section2{
+    background-image: url("../images/patio.jpg");
+    background-size: cover;
+    }
+
+                            //INDEX - Lateral
+
+
+.contenedor_pagina_menu_lateral{
+    color: white;
+    background-color: rgb(47, 6, 131);
+}
+
+.contenedor_pagina_lateral_h2{
+    display: flex;
+    font-family: 'Poppins', sans-serif; font-weight: 100;
+    font-size: 40px;
+    color: white;
+  }
+  
+  .contenedor_pagina_lateral_p{
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    color: white;
+    }
+
+                            //INDEX - FOOTER
+
+footer ul{list-style: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    width: 200px;
+
+span ul{
+    width: 200px;
+}
+}
+
+footer div h2{
+    display: inline;
+    ul div{
+    width:fit-content;
+    height:fit-content ;
+    color: white;
+    background-color: black;
+}
+}
+
+footer div img{
+    position: relative;
+}
+
+.wplogo{
+    
+    position: fixed;
+    right: 0;
+    bottom: 50px;
+    height: 130px;
+    width: 130px;
+    z-index: 1;
+    border-radius: 25px;
+}
+
+
+                            
+
+
+
+
+
+
+
+    

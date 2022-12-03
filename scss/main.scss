@@ -1,0 +1,30 @@
+// UTILITIES
+
+@import './utilities/variables.scss';
+
+// LAYOUT
+
+@import './layout/layoutgeneral.scss';
+@import './layout/grids.scss';
+
+// COMPONENTS
+
+@import './components/etiquetasIndex.scss';
+@import './components/etiquetasCarta.scss';
+@import './components/etiquetasHistoria.scss';
+@import './components/etiquetasTiendaOnLine.scss';
+@import './components/etiquetasFranquicias.scss';
+@import './components/buttons.scss';
+@import './components/cards.scss';
+@import './components/elementos-varios.scss';
+@import './components/galería.scss';
+@import './components/dropdowns.scss';
+
+// VENDORS
+
+@import './vendors/bootstraps.scss';
+@import './vendors/efectosgenericos.scss';
+
+// VIEWS
+
+@import './views/forms.scss';

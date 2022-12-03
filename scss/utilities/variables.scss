@@ -1,0 +1,22 @@
+// variables de TRANSFORMATIONS
+
+
+    @keyframes corredor{
+        0%{color:red;left:0px; top:0px}
+        20%{color:rgb(215, 247, 102);left:4px; top:0px}
+        40%{color:rgb(43, 255, 0);left:80px; top:0px}
+        60%{color:rgb(68, 38, 243);left:120px; top:0px}
+        80%{color:rgb(246, 246, 28);left:160px; top:0px}
+        100%{color:rgb(254, 2, 2);left:190px; top:0px}
+        
+    }
+
+    @keyframes corredor2{
+        0%{color:red;left:145px; top:0px}
+        20%{color:rgb(215, 247, 102);left:290px; top:0px}
+        40%{color:rgb(43, 255, 0);left:410px; top:0px}
+        60%{color:rgb(68, 38, 243);left:550px; top:0px}
+        80%{color:rgb(246, 246, 28);left:690px; top:0px}
+        100%{color:rgb(254, 2, 2);left:830px; top:0px}
+        
+    }
