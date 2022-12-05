@@ -1,0 +1,261 @@
+// EFECTOS GENERICOS: ANIMATIONS, TRANSFORMATIONS & PIMPING
+
+
+                        //SHADOW
+.text_shadow{
+    color:white;
+    text-shadow: 2px 2px 4px #000000;
+    }
+
+                        //TOOLTIP N° 1 (INDEX -header)
+    
+    .tooltip {
+        position: relative;
+        display: inline-block;
+        z-index: 1;
+        .tooltiptext {
+        font-size: 20px;
+        visibility: hidden;
+        background-color: black;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px 0;
+        top: 100%;
+        left: 0%;
+        margin: 0px;
+        height: 300px;
+        width: 180px;
+        position: absolute;
+        z-index: 1;
+        }  & :hover {
+        visibility: visible;
+        z-index: 1;
+            }
+        }
+    
+                        //TOOLTIP N° 2 (INDEX - wp)
+
+.tooltip .tooltiptextwp {
+    font-size: 20px;
+visibility: hidden;
+background-color: yellow;
+color: black;
+text-align: center;
+border-radius: 6px;
+padding: 5px 0;
+    font-family: 'Poppins', sans-serif;
+position: fixed;
+right: 0;
+bottom: 150px;
+height: 220px;
+width: 220px;
+z-index: 1;
+border-radius: 25px;
+        & :hover {
+    visibility: visible;
+}
+}
+
+                        //TOOLTIP N° 1 (PAGES - header)
+
+.tooltip2 {
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+    .tooltiptext2 {
+        font-size: 20px;
+    visibility: hidden;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 6px;
+    padding: 5px 0;
+    top: 100%;
+    left: 0%;
+    margin: 0px;
+    height: 300px;
+    width: 180px;
+    position: absolute;
+    z-index: 1;} 
+    & :hover {
+        visibility: visible;
+        }
+        }
+
+                            //TOOLTIP N° 2 (PAGES - wp)
+                            
+.tooltip2{
+    position: relative;
+display: inline-block;
+.tooltiptextwp {
+    font-size: 20px;
+visibility: hidden;
+background-color: yellow;
+color: black;
+text-align: center;
+border-radius: 6px;
+padding: 5px 0;
+font-family: 'Poppins', sans-serif;
+position: fixed;
+right: 0;
+bottom: 150px;
+height: 220px;
+width: 220px;
+z-index: 1;
+border-radius: 25px;
+    } & :hover {
+    visibility: visible;
+    }
+}
+
+
+                            //TRANSFORMATIONS
+
+.transformaciones3D1:hover{
+    width:fit-content;
+    height:fit-content ;
+    background-color: white;
+    color: black;
+    transform: rotatey('360');
+    }
+
+.transformaciones3D2:hover{
+    width:fit-content;
+    height:fit-content ;
+    background-color: white;
+    color: black;
+    transform: rotatex('360');
+    }
+
+.transformaciones2D1:hover {
+        transform:skewY('360');
+        }
+    
+.transformaciones2D2:hover{
+    transform: rotate('360');
+}
+
+
+                                //ANIMATIONS
+
+.animations1{
+    width: 100px;
+    height: 100px;
+    position:relative;
+    animation-name: corredor;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    color: red;
+}
+
+.animations2{
+    width: 100px;
+    height: 100px;
+    position:relative;
+    animation-name: corredor;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in;
+
+}
+
+.animations3{
+    width: 100px;
+    height: 100px;
+    position:relative;
+    animation-name: corredor;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-out;
+    }
+
+.animations4{
+    width: 40%;
+    height: 100px;
+    position:relative;
+    animation-name: corredor2;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    color: red;
+    text-shadow: 20px 20px 40px #000000;
+
+}
+                            
+
+.animate__lightSpeedInLeft:hover{
+    display: flex;   
+    justify-content: center;
+    justify-items: center; 
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    
+    }
+
+.animate__flip:hover{    
+    color: rgb(255, 255, 255); font-size: 20px; font-family: 'Poppins', sans-serif; font-weight: 500; width: 500px;
+    
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    }
+
+.animate__flipInY:hover{    
+    color: rgb(255, 255, 255); font-size: 20px; font-family: 'Poppins', sans-serif; font-weight: 500; width: 500px;
+    
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    }
+.animate__rotateIn:hover{    
+    color: rgb(255, 255, 255); font-size: 20px; font-family: 'Poppins', sans-serif; font-weight: 500; width: 500px;
+    
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    }
+
+
+    
+
+    .animate__swing:hover{    
+        color: rgb(255, 255, 255); font-size: 20px; font-family: 'Poppins', sans-serif; font-weight: 500; width: 500px;
+        
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        }
+    
+    .animate__rollIn:hover{    
+        color: rgb(255, 255, 255); font-size: 20px; font-family: 'Poppins', sans-serif; font-weight: 500; width: 500px;
+        
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        }
+
+    .animate__shakeY:hover{    
+        color: rgb(255, 255, 255); font-size: 20px; font-family: 'Poppins', sans-serif; font-weight: 500; width: 500px;
+        
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        }
+
+    .animate__jackInTheBox:hover{    
+        color: rgb(255, 255, 255); font-size: 20px; font-family: 'Poppins', sans-serif; font-weight: 500; width: 500px;
+        
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        }
+
+    .animate__fadeIn:hover{    
+        color: rgb(255, 255, 255); font-size: 20px; font-family: 'Poppins', sans-serif; font-weight: 500; width: 500px;
+        
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+
+    }
+
+                        

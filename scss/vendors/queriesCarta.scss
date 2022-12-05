@@ -1,0 +1,225 @@
+/*QUERIES for Mobile phones - galaxy s8*/
+
+/* CARTA.html*/
+
+
+@media only screen and (max-width:360px) {
+
+/*tootlip PAGES header*/
+.tooltip2{
+position: relative;
+display: inline-block;
+z-index: 1;
+}
+
+.tooltip2 .tooltiptext2 {
+font-size: 14px;
+visibility: hidden;
+background-color: black;
+color: #fff;
+text-align: center;
+font-family: 'Poppins', sans-serif;
+border-radius: 6px;
+padding: 5px 0;
+top: 100%;
+left: 0%;
+margin: 0px;
+height: 120px;
+width: 180px;
+position: absolute;
+z-index: 1;
+}
+
+.tooltip2:hover .tooltiptext2 {
+visibility: visible;
+}
+
+/*tootlip PAGES wp*/
+
+.tooltip2{
+position: relative;
+display: inline-block;
+
+}
+
+.tooltip2 .tooltiptextwp {
+font-size: 15px;
+visibility: hidden;
+background-color: yellow;
+color: black;
+text-align: center;
+border-radius: 6px;
+padding: 5px 0;
+font-family: 'Poppins', sans-serif;
+position: fixed;
+right: -180px;
+position: absolute;
+bottom: 386px;
+height: 126px;
+width: 200px;
+z-index: 1;
+border-radius: 25px;
+}
+
+
+.tooltip2:hover .tooltiptextwp {
+visibility: visible;
+}
+
+
+/*Propriedades por etiquetas página Carta*/
+
+/* BODY*/
+
+.contenedor_pagina_carta{
+display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: 0.4fr 0.4fr 1.3fr 1.3fr 1.3fr 2fr 1fr;
+FONT-WEIGHT: 100;
+FONT-WEIGHT: 100;
+font-variant: diagonal-fractions;
+font-variant: diagonal-fractions;
+grid-template-rows: 0.4fr 0.4.fr 2fr 2fr 2fr 4fr 0.7fr;
+grid-template-areas:
+"header"
+"nav"
+"main"
+"section1"
+"section2"
+"section3"
+"footer";
+justify-items: stretch;
+justify-content: center;
+align-content: stretch;
+}
+
+/*MAIN*/
+
+
+
+
+.carta_body_main{
+grid-area: main;
+/* display: flex; */
+background-image: url("../images/carta\ fachada\ principal.webp");
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+height:  360px;
+width: 360px;
+/* z-index: 2; */
+position: absolute;
+top: 267px;
+}
+
+.carta_body_main_i{
+font-family: 'Poppins', sans-serif;
+color: white;
+background-color: rgb(20, 9, 81);
+background-image: radial-gradient(circle, rgb(255, 0, 0),rgb(243, 194, 194));
+padding: 20px;
+width: 360px;
+height: 124px;
+z-index: 2;
+position: relative;
+left: 0px;
+bottom: -360px;
+z-index: 2;
+}
+
+.carta_body_main_i h2{
+font-family: 'Poppins', sans-serif;
+font-weight: 100;
+font-size: 25px;
+}
+
+body .Carta_main div i h2{
+font-family: 'Poppins', sans-serif; font-weight: 100;
+justify-content: center;
+align-items: center;
+font-size: 40px;
+}
+
+body .Carta_main div i p{
+font-family: 'Poppins', sans-serif;
+font-size: 20px;
+}
+
+.carta_button{
+font-family: 'Poppins', sans-serif;
+position: relative;
+border-radius: 4px;
+border: solid black 2px;
+color: #FFFFFF;
+font-size: 28px;
+padding: 10px;
+width: 360px;
+left: 50%;
+transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+background-color: #f1f1f1;
+color: black;
+font-size: 20px;
+padding: 10px 16px;
+border: none;
+cursor: pointer;
+border-radius: 5px;
+position: relative;
+bottom: 0px;
+}    
+.carta_button:hover{       
+background-color: black;
+color: white;
+}
+
+.container .btn:hover {
+background-color: black;
+color: white;
+}
+
+
+.carta_section1{grid-area: section1;display: flex;justify-items: center;align-items: center;flex-direction: column;/* height: 1000px; */width: 360px;row-gap: 0px;padding: 0px;position: absolute;top: 862px;/* left: 10px; */align-content: space-around;}
+
+
+.carta_section2{grid-area: section2;display: flex;justify-items: center;width: 360px;/* height: 1000px; */row-gap: 0px;padding: 0px;flex-direction: column-reverse;position: absolute;top: 1897px;left: 0px;font-size: 10px;}
+
+
+.carta_section3{grid-area: section3;display: flex;flex-wrap: wrap;flex-wrap: wrap;/* height: 284px; */row-gap: 0px;width: 360px;padding: 0px;font-size: 10px;flex-wrap: wrap;position: absolute;/* bottom: 1201px; */bottom: -616x;flex-direction: row;top: 2436px;}
+
+/* Carta Section Carousel*/
+
+.imagen_carousel_custom {
+
+width: 360px;
+height:360px;
+
+object-fit: cover;
+font-family:'Poppins', sans-serif; 
+
+
+
+}
+
+
+
+.carta_list_group{
+
+width: 385px;
+
+/* height: 353px; */
+
+/* object-fit: cover; */
+
+padding: 0px 30px 0px 30px;
+
+font-size: 10px;
+
+bottom: -298px;
+
+position: absolute;
+
+left: -15px;
+}
+
+
+}
