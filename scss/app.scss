@@ -2,6 +2,15 @@
 
 @import './utilities/variables.scss';
 
+// QUERIES
+
+@import './vendors/queriesCarta.scss';
+@import './vendors/queriesIndex.scss';
+@import './vendors/queriesHistoria.scss';
+@import './vendors/queriesFranquicias.scss';
+@import './vendors/queriesTOL.scss';
+
+
 // LAYOUT
 
 @import './layout/layoutgeneral.scss';

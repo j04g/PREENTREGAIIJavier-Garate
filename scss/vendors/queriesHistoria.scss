@@ -1,236 +1,228 @@
 
 
-                                    /*Propriedades por etiquetas página Historia*/
+                                        /*QUERIES for Mobile phones - galaxy s8*/
 
-/* BODY*/
+/* HISTORIA.html*/
 
-.contenedor_pagina_historia{
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    grid-template-rows: 1fr 3fr 3fr 3fr 3fr 0.7fr;
-    grid-template-areas: 
-    "header nav"
-    "main main"
-    "section1 section1"
-    "section2 section2"
-    "section3 section3"
-    "footer footer";
-    row-gap: 30px;
-      
+/*CONTENEDOR PRINCIPAL*/ 
 
-}
+@media only screen and (max-width:360px) {
 
-/*MAIN*/
-
-
-
-.contenedor_historia_body_main{
-    grid-area: main;
-    
-    background-image: url("../images/comedor.jpg"); 
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    margin-bottom: 0px;
-    margin-left: 0px;
-    
-    
-    
+    .contenedor_pagina_historia{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.4fr 0.4fr 1fr 1fr 1fr 1fr 0.5fr;
+        grid-template-areas:
+            "header"
+            "nav"
+            "main"
+            "section1"
+            "section2"
+            "section3"
+            "footer";
+        column-width: 360px;
+        row-gap: 20px;
     }
     
-.historia_main_carousel{
-    display:flex;
-    height: 400px;
-    width: 200px;
-    position: relative;
-    top: 200px;
-
-}  
-
-.historia_main_i{ 
-    display: flex;
-    flex-direction: column;
-    background-image: linear-gradient(to right, rgb(255, 0, 0),rgb(243, 194, 194));
-    height: 250px;
-    width: 100vw;
-    justify-content: flex-start;
-    padding: 20px;
-    overflow: auto;
-    z-index: 1;
-    position: relative;
-    top: 400px;
-    }
-
- 
-.contenedor_historia_section1{
-    grid-area: section1;
-    display: flex;
-    flex-direction: column;
-}
-
-
-.historia_section1_i{ 
-    display: flex;
-    flex-direction: column;
-    background-image: linear-gradient(to left, rgb(22, 22, 222),rgb(174, 174, 249));
-    height: 250px;
-    width: 100%;
-    justify-content: normal;
-    padding: 20px;
-    z-index: 1;
-    overflow: auto;
-    float:inline-start;
-    position: relative;
-    top: 600px;
-    }
-
-.contenedor_historia_section1_carousel{
-       
-    height: 400px;
-    width: 500px;
-    position: relative;
-    top: 650px;
-    left: 485px;
-}
-
-.historia_imagen_carousel_custom {
+    /*MAIN*/
     
     
-    height: 420px;
-    width: 100%;
-    object-fit: cover;
     
-    }
-
-.historia_imagen_carousel_custom_text{
-    padding: 20px 20px 60px 20px;  
-    font-family:'Poppins', sans-serif; 
-    color: white;
-
-    }
-
-
-
-
-
-
-
-
-.contenedor_historia_section2{
-    grid-area: section2;
-    display: flex;
-    }
-
-.historia_section2_i{ 
+    .contenedor_historia_body_main{
+        grid-area: main;
+        /* background-size: cover; */
+        /* background-repeat: repeat-y; */
+        object-fit: contain;
+        /* background-repeat: no-repeat; */
+        /* background-attachment: fixed; */
+        margin-bottom: 0px;
+        margin-left: 0px;
+        /* width: 360px; */
+        width: px;
+        
+        /* background-repeat-y: repeat; */
+        }
+        
+    .historia_main_carousel{
+        display:flex;
+        height: 400px;
+        width: 200px;
+        position: relative;
+        top: 200px;
+    
+    }  
+    
+    .historia_main_i{
         display: flex;
         flex-direction: column;
-        background-image: linear-gradient(to left, rgb(22, 22, 222),rgb(250, 6, 6));
-        height: 300px;
+        background-image: linear-gradient(to right, rgb(255, 0, 0),rgb(243, 194, 194));
+        height: 444px;
         width: 100vw;
+        justify-content: flex-start;
+        padding: 15px;
+        overflow: auto;
+        z-index: 1;
+        position: relative;
+        top: -247px;
+        }
+    
+     
+    .contenedor_historia_section1{
+        grid-area: section1;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    
+    .historia_section1_i{
+        display: flex;
+        flex-direction: column;
+        background-image: linear-gradient(to left, rgb(22, 22, 222),rgb(174, 174, 249));
+        height: 475px;
+        width: 360px;
         justify-content: normal;
         padding: 20px;
         z-index: 1;
         overflow: auto;
         float:inline-start;
         position: relative;
-        top: 500px;
+        top: 120px;
         }
-
-
-  
-  
-.historia_main_i h2{
-width: fit-content;
-font-family: 'Poppins', sans-serif; font-weight: 100;
-font-size: 25px;
-color: white;
-
     
-    }
-
-      
-.historia_main_i p{
-font-family: 'Poppins', sans-serif;
-font-size: 18px;
-color: white;
-
-}
-
-.historia_section1_i h2{
-width: fit-content;
-font-family: 'Poppins', sans-serif; font-weight: 100;
-font-size: 25px;
-color: white;
-}
-
-      
-.historia_section1_i p{
-font-family: 'Poppins', sans-serif;
-font-size: 18px;
-color: white;
-
-}
-
-.historia_section2_i h2{
-width: fit-content;
-font-family: 'Poppins', sans-serif; font-weight: 100;
-font-size: 25px;
-color: white;
-}
-
-      
-.historia_section2_i p{
-font-family: 'Poppins', sans-serif, italic;
-font-size: 18px;
-color: white;
-
-}
-
-.historia_card{
-box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.2);
-  max-width: 300px;
-  margin: auto;
-  text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: whitesmoke;
-  position: relative;
-    top: 530px;
-}
-
-.historia_card_title{
-    color: grey;
-    font-size: 18px;
-}
-
-.historia_card_button{
-    border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 8px;
-  color: white;
-  background-color: #000;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-  font-size: 18px;
-}
-
-.historia_card_button:hover{
-    opacity: 0.7;
-}
-
-.contenedor_historia_section3{
-    grid-area: section3;
+    .contenedor_historia_section1_carousel{
+           
+    height: 360px;
+           
+    width: 300px;
+           
     position: relative;
-    left: 300px;
-    width: 900px;
-    height:600px;
-    top: 150px;
-    box-shadow: 80px 80px 80px 80px inset red;
-    opacity: 0.5;
+           
+    top: 268px;
+           
+    left: 27px;
+    }
     
-}
+    .historia_imagen_carousel_custom {
+        
+    height: 270px;
+        
+    width: 100%;
+        
+    object-fit: cover;
+        
+    font-size: 12px;
+        
+    color: white;
+        }
+    
+    .historia_imagen_carousel_custom_text{
+        padding: 20px 20px 60px 20px;  
+        font-family:'Poppins', sans-serif; 
+        color: white;
+        font-size: 12px;
+    
+        }
+    
+    
+    
+    
+    
+    
+    
+    
+    .contenedor_historia_section2{
+        grid-area: section2;
+        display: flex;
+        }
+    
+    .historia_section2_i{
+            display: flex;
+            flex-direction: column;
+            background-image: linear-gradient(to left, rgb(22, 22, 222),rgb(250, 6, 6));
+            height: 719px;
+            width: 100vw;
+            justify-content: normal;
+            padding: 5px;
+            z-index: 1;
+            overflow: auto;
+            float:inline-start;
+            position: relative;
+            top: 160px;
+            }
+    
+    
+      
+      
+    .historia_main_i h2{width: fit-content;font-family: 'Poppins', sans-serif;font-weight: 100;font-size: 25px;color: white;}
+    
+          
+    .historia_main_i p{font-family: 'Poppins', sans-serif;font-size: 15px;color: white;}
+    
+    .historia_section1_i h2{
+    width: fit-content;
+    font-family: 'Poppins', sans-serif; font-weight: 100;
+    font-size: 25px;
+    color: white;
+    }
+    
+          
+    .historia_section1_i p{font-family: 'Poppins', sans-serif;font-size: 15px;color: white;}
+    
+    .historia_section2_i h2{
+    width: fit-content;
+    font-family: 'Poppins', sans-serif; font-weight: 100;
+    font-size: 25px;
+    color: white;
+    }
+    
+          
+    .historia_section2_i p{font-family: 'Poppins', sans-serif;font-size: 15px;color: white;}
+    
+    .historia_card{box-shadow: 0 4px 12px 0 rgba(0,0,0,0.2);max-width: 252px;/* height: 171px; */margin: auto;text-align: center;font-family: Arial, Helvetica, sans-serif;background-color: whitesmoke;position: relative;top: -70px;font-size: 14px;right: 0px;}
+    
+    .historia_card_title{
+        color: grey;
+        font-size: 18px;
+    }
+    
+    .historia_card_button{
+        border: none;
+        outline: 0;
+        display: inline-block;
+        padding: 2px;
+        color: white;
+        background-color: #000;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+        font-size: 12px;
+    }
+    
+    .historia_card_button:hover{
+        opacity: 0.7;
+    }
+    
+    .contenedor_historia_section3{
+        grid-area: section3;
+        position: relative;
+        left: 13px;
+        width: 333px;
+        height: 843px;
+        top: 10px;
+        box-shadow: 80px 80px 80px 80px inset red;
+        border-radius: 4px;
+        opacity: 0.5;
+        font-size: 0px;
+    }
+    
+    .contenedor_historia_section3:hover{
+        opacity:1.5;}
+    
+        button.btn.btn-primary {
+            position: absolute;
+            bottom: -70px;
+        }
+    }
+    
 
-.contenedor_historia_section3:hover{
-    opacity:1.5;
-}
+
