@@ -1,3 +1,34 @@
+/*Propriedades por etiquetas página FRANQUICIAS*/
+
+
+.contenedor_pagina_franquicias{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 1fr 6fr 0.7fr;
+    grid-template-areas: 
+    "header nav"
+    "main main"
+    "section1 section1"
+    "footer footer";
+    row-gap: 30px;
+      
+
+}
+
+
+
+/*MAIN & SECTION 1*/
+
+
+
+.contenedor_franquicias_main{
+    grid-area: main;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+    
 .franquicias_dashboard_estadísticas1{
     display: flex;
     flex-direction: column;
@@ -10,6 +41,7 @@
     height: 300px;
     width: 72%;
     justify-content: center;
+    
     align-items: center;
     align-content: center;
     overflow: auto;
@@ -19,7 +51,31 @@
     left: 30px;
     border-radius: 10px;
     float: inline-end;
-    z-index: 2;
+    z-index: 1;
+
+}
+    
+.contenedor_franquicias_section1{
+    grid-area: section1;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: fit-content;
+    align-items: flex-start;
+    position: relative;
+    bottom: 0px;
+}
+
+
+.contenedor_franquicias_main_hijo1{
+    display: flex;
+    
+
+    
+}
+
+.contenedor_franquicias_main_hijo2{
+    display: flex;
 }
 
 .dashboard_estadísticas{
@@ -28,3 +84,7 @@
     bottom: 100px;
 }
 
+.disable_button{
+    opacity: 0.6;
+    cursor: not-allowed;
+  }

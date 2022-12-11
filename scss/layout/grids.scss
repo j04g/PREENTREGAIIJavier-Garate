@@ -1,10 +1,31 @@
-                                            //Layout x páginas - GRIDS & CONTENEDORES
-
-                                            // Layout - partes comunes a todaslas páginas
-
-
-/*propriedades de partes comunes - HEADER, NAV & FOOTER*/  
-.contenedor_pagina_menu_header{
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  
+  
+  /*propriedades de pagina INDEX contenedor*/
+  
+  #contenedor_pagina_menu{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1.7fr;
+    grid-template-rows: 1.3fr 7.2fr 3fr 6.3fr 1.3fr;
+    grid-template-areas: 
+    "header nav nav nav nav"
+    "main main main main main"
+    "section1 section1 section1 section1 section1"
+    "section2 section2 section2 section2 lateral"
+    "footer footer footer footer footer";
+    row-gap: 60px; 
+        
+       
+  }
+  
+  /*propriedades de pagina menu.html - areas hijas*/
+  
+  .contenedor_pagina_menu_header{
     grid-area: header;
     display: flex;
     justify-content: center;
@@ -14,9 +35,11 @@
     background-color: rgb(22, 22, 222);
     height: 175px;
     width: 550px;
-    padding: 25px;
-    }
-.contenedor_pagina_menu_nav{
+    padding: 25px
+    
+  }
+  
+  .contenedor_pagina_menu_nav{
     grid-area: nav;
     display: flex;
     flex-direction: row;
@@ -24,7 +47,57 @@
     justify-content: flex-start;
     align-items: center;
     background-color: rgb(22, 22, 222);
-    height: 175px;                    
+    height: 175px;
+                     
+  }
+  .contenedor_pagina_menu_main{
+    grid-area: main;
+    display: flex;
+    flex-direction: column-reverse;
+    background-image: url("../images/Fachada principal.jpg") ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    height:900px;
+    
+}
+
+.contenedor_pagina_menu_lateral{
+    color: white;
+    background-color: rgb(47, 6, 131);
+    height:900px;
+}
+
+.contenedor_pagina_menu_section1{
+    grid-area: section1;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    justify-items: center;
+    align-content: left;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 430px;
+    background-color: rgb(226, 226, 203);
+    
+    
+    
+}
+
+.contenedor_pagina_menu_section2{
+    grid-area: section2;
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch ;
+    justify-items: stretch;
+    align-content: stretch;
+    align-items: stretch;
+    background-color: goldenrod;
+    height:900px;
+    
+    
+
 }
 
 .contenedor_pagina_menu_footer{
@@ -37,302 +110,6 @@
     align-items: center;
     background-color: black;
     color: white;
-    }
-
-
-                                            // Layout INDEX.html
-
-#contenedor_pagina_menu{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1.7fr;
-    grid-template-rows: 1.3fr 5fr 3fr 5fr 1.3fr;
-    grid-template-areas: 
-    "header nav nav nav nav"
-    "main main main main main"
-    "section1 section1 section1 section1 section1"
-    "section2 section2 section2 section2 lateral"
-    "footer footer footer footer footer";
-    row-gap: 60px;
-}
-
-.contenedor_pagina_menu_main{
-    grid-area: main;
-    display: flex;
-    flex-direction: column-reverse;
-    background-image: url("../images/Fachada principal.jpg") ;
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin-bottom: 0px;
-    margin-left: 0px;
-    }
-
-
-
-.contenedor_pagina_menu_section1{
-    grid-area: section1;
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-    justify-items: center;
-    align-content: left;
-    align-items: center;
-    flex-wrap: wrap;
-    background-color: rgb(226, 226, 203);
-    }
-
-.contenedor_pagina_menu_section2{
-    grid-area: section2;
-    display: flex;
-    flex-direction: row;
-    justify-content: stretch ;
-    justify-items: stretch;
-    align-content: stretch;
-    align-items: stretch;
-    background-color: goldenrod;
-    }
-
-
-    .contenedor_pagina_menu_lateral{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        justify-items: center;
-        align-content: center;
-        align-items: center;
-        padding: 15px;
-        }
-        
-
-
-
-
-
-                                            // Layout CARTE.html
-
-
-.contenedor_pagina_carta{
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    grid-template-rows: 1fr 2.7fr 2fr 2fr 2.2fr 0.7fr;
-    grid-template-areas: 
-    "header nav"
-    "main main"
-    "section1 section1"
-    "section2 section2"
-    "section3 section3"
-    "footer footer";
-    row-gap: 80px;
-}
-
-.carta_body_main{
-    grid-area: main;
-    display: flex;
-    background-image: url("../images/carta\ fachada\ principal.webp") ;
-    background-repeat: no-repeat;
-    background-position: center;
-    z-index: 2;
-}
-
-.carta_section1{
-    grid-area: section1;
-    display: flex;
-    justify-items: center;
-    height: 520px;
-    row-gap: 60px;
-    padding: 60px;
-    }
     
-    .carta_section2{
-    grid-area: section2;
-    display: flex;
-    justify-items: center;
-    height: 520px;
-    row-gap: 60px;
-    padding: 60px;
-    }
-    
-    .carta_section3{
-    grid-area: section3;
-    display: flex;
-    height: 520px;
-    row-gap: 60px;
-    padding: 60px;
-    }
-
-
-                             // Layout - TIENDA ON LINE
-
-/* BODY*/
-
-.contenedor_pagina_TiendaOnLine{
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    grid-template-rows: 1fr 1fr 0.7fr 0.7fr;
-    grid-template-areas: 
-    "header nav"
-    "main main"
-    "section section"
-    "footer footer";
-    row-gap: 160px;
- }
-
-.TiendaOnLine_main_flex-container{
-  grid-area: main;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  position: absolute;  
-  bottom: 0px;
-  left: 0px;
-  padding: 30px;
+   
 }
-
-
-.TiendaOnLine_main_flex-hijo1{
-display: flex;
-flex-direction: column;
-background-image: linear-gradient(to right, rgb(255, 0, 0),rgb(243, 194, 194));
-height: 550px;
-width: 30%;
-padding: 10px;
-justify-content: center;
-}
-
-.TiendaOnLine_main_flex-hijo2{
-display: flex;
-flex-direction: column;
-background-image: url("../images/gif\ carrito.gif");
-background-size: 80%;
-background-repeat: no-repeat;
-background-position: bottom;
-height: 550px;
-width: 45%;
-filter: drop-shadow(8px 8px 10px gray);
-font-family: 'Poppins', sans-serif;
-font-size: large;
-}
-
-.TiendaOnLine_main_flex-hijo3{
-display: flex;
-flex-direction: row;
-background-color: rgb(22, 22, 222);
-height: 550px;
-width: 30%;
-background-image: linear-gradient(to left, rgb(22, 22, 222),rgb(174, 174, 249));
-}
-
-.TiendaOnLine_section_flex-container{
-grid-area: section;
-position: relative;
-width: 1200px;
-left: 8%;
-padding: 0px;
-}
-
-
-                             // Layout - HISTORIA
-
-.contenedor_pagina_historia{
-display: grid;
-grid-template-columns: 1fr 3fr;
-grid-template-rows: 1fr 3fr 3fr 3fr 3fr 0.7fr;
-grid-template-areas: 
-"header nav"
-"main main"
-"section1 section1"
-"section2 section2"
-"section3 section3"
-"footer footer";
-row-gap: 30px;
-}
-
-
-.contenedor_historia_body_main{
-grid-area: main;
-background-image: url("../images/comedor.jpg"); 
-background-size: cover;
-background-repeat: no-repeat;
-background-attachment: fixed;
-margin-bottom: 0px;
-margin-left: 0px;
-}
-
-.contenedor_historia_section1{
-grid-area: section1;
-display: flex;
-flex-direction: column;
-}
-
-.contenedor_historia_section2{
-grid-area: section2;
-display: flex;
-}
-
-.contenedor_historia_section3{
-grid-area: section3;
-position: relative;
-left: 300px;
-width: 900px;
-height:600px;
-top: 150px;
-box-shadow: 80px 80px 80px 80px inset red;
-opacity: 0.5;
-.contenedor_historia_section3:hover{
-    opacity:1.5;
-    }
-    
-}
-
-
-
-
-
-// Layout - FRANQUICIAS
-
-.contenedor_pagina_franquicias{
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    grid-template-rows: 1fr 1fr 6fr 0.7fr;
-    grid-template-areas: 
-    "header nav"
-    "main main"
-    "section1 section1"
-    "footer footer";
-    row-gap: 30px;
-}
-
-.contenedor_franquicias_main{
-    grid-area: main;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-.contenedor_franquicias_main_hijo1{
-    display: flex;
-}
-
-.contenedor_franquicias_main_hijo2{
-    display: flex;
-}
-
-
-.contenedor_franquicias_section1{
-    grid-area: section1;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    height: fit-content;
-    align-items: flex-start;
-    position: relative;
-    bottom: 0px;
-}
-
-        
-    
-
-  
-
-  
-
-    
