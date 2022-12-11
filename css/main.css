@@ -90,7 +90,11 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1.7fr;
   grid-template-rows: 1.3fr 7.2fr 3fr 6.3fr 1.3fr;
-  grid-template-areas: "header nav nav nav nav" "main main main main main" "section1 section1 section1 section1 section1" "section2 section2 section2 section2 lateral" "footer footer footer footer footer";
+  grid-template-areas: "header nav nav nav nav"
+ "main main main main main"
+ "section1 section1 section1 section1 section1"
+ "section2 section2 section2 section2 lateral"
+ "footer footer footer footer footer";
   row-gap: 60px; }
 
 /*propriedades de pagina menu.html - areas hijas*/
@@ -221,20 +225,20 @@ nav ul li a.highlight:hover {
   background-image: radial-gradient(circle, #1616de, #626bcb);
   padding: 20px;
   width: 480px;
-  height: 200px;
+  height: 230px;
   z-index: 1;
   position: absolute;
   right: 0px;
-  top: 245px; }
+  top: 246px; }
 
-main i h2 {
+main div h2 {
   font-family: 'Poppins', sans-serif;
-  font-weight: 100;
+  font-weight: 300;
   font-size: 30px; }
 
-main i p {
+main div p {
   font-family: 'Poppins', sans-serif;
-  font-size: 20px; }
+  font-size: 17px; }
 
 .contenedor_index_i2 {
   display: flex;
@@ -395,7 +399,12 @@ footer div img {
   display: grid;
   grid-template-columns: 1fr 3fr;
   grid-template-rows: 0.6fr 3fr 2.2fr 2fr 2.2fr 0.7fr;
-  grid-template-areas: "header nav" "main main" "section1 section1" "section2 section2" "section3 section3" "footer footer";
+  grid-template-areas: "header nav"
+ "main main"
+ "section1 section1"
+ "section2 section2"
+ "section3 section3"
+ "footer footer";
   row-gap: 40px; }
 
 /*MAIN*/
@@ -512,7 +521,12 @@ body .Carta_main div i p {
   display: grid;
   grid-template-columns: 1fr 3fr;
   grid-template-rows: 1fr 3fr 3fr 3fr 5fr 0.7fr;
-  grid-template-areas: "header nav" "main main" "section1 section1" "section2 section2" "section3 section3" "footer footer";
+  grid-template-areas: "header nav"
+ "main main"
+ "section1 section1"
+ "section2 section2"
+ "section3 section3"
+ "footer footer";
   row-gap: 30px; }
 
 /*MAIN*/
@@ -560,10 +574,6 @@ body .Carta_main div i p {
   position: relative;
   bottom: -67px;
   height: 70px; }
-
-.historia_main_i {
-  position: relative;
-  height: 200px; }
 
 .contenedor_historia_section1 {
   grid-area: section1;
@@ -706,7 +716,10 @@ body .Carta_main div i p {
   display: grid;
   grid-template-columns: 1fr 3fr;
   grid-template-rows: 1fr 1fr 0.7fr 0.7fr;
-  grid-template-areas: "header nav" "main main" "section section" "footer footer";
+  grid-template-areas: "header nav"
+ "main main"
+ "section section"
+ "footer footer";
   row-gap: 160px; }
 
 .TiendaOnLine_main_flex-container {
@@ -828,7 +841,10 @@ body .Carta_main div i p {
   display: grid;
   grid-template-columns: 1fr 3fr;
   grid-template-rows: 1fr 1fr 6fr 0.7fr;
-  grid-template-areas: "header nav" "main main" "section1 section1" "footer footer";
+  grid-template-areas: "header nav"
+ "main main"
+ "section1 section1"
+ "footer footer";
   row-gap: 30px; }
 
 /*MAIN & SECTION 1*/
@@ -898,8 +914,8 @@ body .Carta_main div i p {
   margin: 4px 2px;
   border-radius: 50%;
   position: absolute;
-  right: 233px;
-  top: 70px; }
+  right: 275px;
+  top: 85px; }
 
 /*FLIP - CARD - DASHOBOARD*/
 .flip-card {
@@ -1157,7 +1173,7 @@ a {
   z-index: 1;
   bottom: 159px;
   left: 35px;
-  margin-left: -60px;
+  margin-left: -10px;
   font-size: 15px;
   padding: 5px;
   font-family: 'Poppins', sans-serif; }
@@ -1456,7 +1472,13 @@ a {
     FONT-WEIGHT: 100;
     FONT-WEIGHT: 100;
     font-variant: diagonal-fractions;
-    grid-template-areas: "header" "nav" "main" "section1" "section2" "section3" "footer";
+    grid-template-areas: "header"
+ "nav"
+ "main"
+ "section1"
+ "section2"
+ "section3"
+ "footer";
     justify-items: stretch;
     justify-content: center;
     align-content: stretch; }
@@ -1593,7 +1615,12 @@ a {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 0.4fr 0.4fr 3fr 2.8fr 1fr 0.7fr;
-    grid-template-areas: "header" "nav" "main" "section1" "section2" "footer";
+    grid-template-areas: "header"
+ "nav"
+ "main"
+ "section1"
+ "section2"
+ "footer";
     row-gap: 20px; } }
 
 @media only screen and (max-width: 360px) {
@@ -2065,7 +2092,13 @@ a {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 0.4fr 0.4fr 1fr 1fr 1fr 1.15fr 0.5fr;
-    grid-template-areas: "header" "nav" "main" "section1" "section2" "section3" "footer";
+    grid-template-areas: "header"
+ "nav"
+ "main"
+ "section1"
+ "section2"
+ "section3"
+ "footer";
     column-width: 360px;
     row-gap: 20px;
     background-image: url(../images/comedor.jpg);
@@ -2248,7 +2281,11 @@ a {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 0.4fr 0.4fr 0.9fr 7.2fr 0.7fr;
-    grid-template-areas: "header" "nav" "main" "section1" "footer"; }
+    grid-template-areas: "header"
+ "nav"
+ "main"
+ "section1"
+ "footer"; }
   /*MAIN & SECTION 1*/
   .contenedor_franquicias_main {
     grid-area: main;
@@ -2538,7 +2575,11 @@ a {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 0.4fr 0.65fr 2fr 1fr 0.7fr;
-    grid-template-areas: "header"   "nav"   "main"   "section"   "footer"; }
+    grid-template-areas: "header"
+   "nav"
+   "main"
+   "section"
+   "footer"; }
   .TiendaOnLine_main_flex-container {
     grid-area: main;
     /* display: flex; */
