@@ -13,145 +13,117 @@
     "section2 section2"
     "section3 section3"
     "footer footer";
-    row-gap: 30px;
-      
-
-}
+    row-gap: 30px;}
 
 /*MAIN*/
 
 
 
 .contenedor_historia_body_main{
-    grid-area: main;
-    background-image: url("../images/comedor.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    margin-bottom: 0px;
-    margin-left: 0px;
-    }
-    
-.historia_main_carousel{
-    display:flex;
-    height: 400px;
-    width: 200px;
-    position: relative;
-    top: 200px;
+grid-area: main;
+background-image: url("../images/comedor.jpg");
+background-size: cover;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-position: center;
+margin-bottom: 0px;
+margin-left: 0px;}
 
-}  
+
 
 .historia_main_i{ 
-    display: flex;
-    flex-direction: column;
-    background-image: linear-gradient(to right, rgb(255, 0, 0),rgb(243, 194, 194));
-    height: 365px;
-    width: 100vw;
-    justify-content: flex-start;
-    
-     float:right;
-    z-index: 1;
-    position: relative;
-    top: 440px;
-    padding: 40px;
-    }
+display: flex;
+flex-direction: column;
+background-image: linear-gradient(to right, rgb(255, 0, 0),rgb(243, 194, 194));
+height: 365px;
+width: 100vw;
+justify-content: flex-start;
+float:right;
+z-index: 1;
+position: relative;
+top: 440px;
+padding: 40px;}
 
-    .historia_boton1{
-      position: relative;
-      top:85px;
-      height: 70px;
-      
-    }
+.historia_boton1{
+position: relative;
+top:85px;
+height: 70px;}
 
-    .historia_boton2{
-      position: relative;
-      bottom:-77px;
-      height: 70px;
+.historia_boton2{
+@extend.historia_boton1;
+bottom:-77px;
+height: 70px;}
 
-    }
-
-    .historia_boton3{
-      position: relative;
-      bottom:-67px;
-      height: 70px;
-
-    }
+.historia_boton3{
+@extend.historia_boton1;
+bottom:-67px;
+height: 70px;}
 
 
 
 .contenedor_historia_section1{
-    grid-area: section1;
-    display: flex;
-    flex-direction: column;
-}
-
+grid-area: section1;
+display: flex;
+flex-direction: column;}
 
 .historia_section1_i{ 
-    display: flex;
-    flex-direction: column;
-    background-image: linear-gradient(to left, rgb(22, 22, 222),rgb(174, 174, 249));
-    height: 380px;
-    width: 100%;
-    justify-content: normal;
-    padding: 40px;
-    z-index: 1;
+display: flex;
+flex-direction: column;
+background-image: linear-gradient(to left, rgb(22, 22, 222),rgb(174, 174, 249));
+height: 380px;
+width: 100%;
+justify-content: normal;
+padding: 40px;
+z-index: 1;
+position: relative;
+top: 720px;}
+    
 
 
-    position: relative;
-    top: 720px;
-    }
 
 .contenedor_historia_section1_carousel{
-       
-    height: 400px;
-    width: 500px;
-    position: relative;
-    top: 840px;
-    left: 485px;
-}
+height: 400px;
+width: 500px;
+position: relative;
+top: 840px;
+left: 485px;}
+
+.historia_main_carousel{
+display:flex;
+height: 400px;
+width: 200px;
+position: relative;
+top: 200px;}  
+
 
 .historia_imagen_carousel_custom {
-       
-    height: 420px;
-    width: 100%;
-    object-fit: cover;
-    
-    }
+height: 420px;
+width: 100%;
+object-fit: cover;}
 
 .historia_imagen_carousel_custom_text{
-    padding: 20px 20px 60px 20px;  
-    font-family:'Poppins', sans-serif; 
-    color: white;
-
-    }
-
-
-
-
-
-
+padding: 20px 20px 60px 20px;  
+font-family:'Poppins', sans-serif; 
+color: white;}
 
 
 .contenedor_historia_section2{
     grid-area: section2;
-    display: flex;
-    }
+    display: flex;}
 
-.historia_section2_i{ 
-        display: flex;
-        flex-direction: column;
-        background-image: linear-gradient(to left, rgb(22, 22, 222),rgb(250, 6, 6));
-        height: 480px;
-        width: 100vw;
-        justify-content: normal;
-        padding: 20px;
-        z-index: 1;
-        
-        float:inline-start;
-        position: relative;
-        top: 950px;
-        }
+    .historia_section2_i{ 
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(to left, rgb(22, 22, 222),rgb(250, 6, 6));
+    height: 480px;
+    width: 100vw;
+    justify-content: normal;
+    padding: 20px;
+    z-index: 1;
+    float:inline-start;
+    position: relative;
+    top: 950px;}
+    
 
 
   
@@ -160,88 +132,38 @@
 width: fit-content;
 font-family: 'Poppins', sans-serif; font-weight: 100;
 font-size: 25px;
-color: white;
-
-    
-    }
+color: white;}
 
       
 .historia_main_i p{
 font-family: 'Poppins', sans-serif;
 font-size: 18px;
-color: white;
-
-}
+color: white;}
 
 .historia_section1_i h2{
 width: fit-content;
 font-family: 'Poppins', sans-serif; font-weight: 100;
 font-size: 25px;
-color: white;
-}
+color: white;}
 
       
 .historia_section1_i p{
 font-family: 'Poppins', sans-serif;
 font-size: 18px;
-color: white;
-
-}
+color: white;}
 
 .historia_section2_i h2{
 width: fit-content;
 font-family: 'Poppins', sans-serif; font-weight: 100;
 font-size: 25px;
-color: white;
-}
+color: white;}
 
       
 .historia_section2_i p{
 font-family: 'Poppins', sans-serif, italic;
 font-size: 18px;
-color: white;
+color: white;}
 
-}
-
-.historia_card{
-box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.2);
-  max-width: 300px;
-  margin: auto;
-  text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: whitesmoke;
-  position: relative;
-  height: 600px;
-    top: 800px;
-}
-
-.historia_card_title{
-    color: grey;
-    font-size: 18px;
-}
-
-.historia_card_button{
-    border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 8px;
-  color: white;
-  background-color: #000;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-  font-size: 18px;
-}
-
-.historia_card_button:hover{
-    opacity: 0.7;
-}
-
-.historia_card_position{
-  position: absolute;
-  top: 355px;
-  left: 580px;
-}
 
 .contenedor_historia_section3{
     grid-area: section3;
@@ -253,9 +175,7 @@ box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.2);
     box-shadow: 80px 80px 80px 80px inset red;
     opacity: 0.5;
     
-}
-
-.contenedor_historia_section3:hover{
-    opacity:1.5;
+        &:hover{
+        opacity:1.5;}
 }
 

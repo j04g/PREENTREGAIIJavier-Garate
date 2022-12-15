@@ -19,17 +19,31 @@
 
 /*MAIN & SECTION 1*/
 
-
-
-.contenedor_franquicias_main{
+.contenedor_franquicias_main {
     grid-area: main;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+
+    .contenedor_franquicias_main_hijo1 {
+        display: flex;}
     
-}
+    .contenedor_franquicias_main_hijo2{
+        display: flex;}
+    }
     
-.franquicias_dashboard_estadísticas1{
+    
+.contenedor_franquicias_section1{
+grid-area: section1;
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+height: fit-content;
+align-items: flex-start;
+position: relative;
+bottom: 0px;}
+    
+    .franquicias_dashboard_estadísticas1{
     display: flex;
     flex-direction: column;
     font-family: 'Poppins', sans-serif; 
@@ -41,8 +55,6 @@
     height: 300px;
     width: 72%;
     justify-content: center;
-    
-    align-items: center;
     align-content: center;
     overflow: auto;
     float:inline-start;
@@ -51,40 +63,17 @@
     left: 30px;
     border-radius: 10px;
     float: inline-end;
-    z-index: 1;
+    z-index: 1;}
 
-}
-    
-.contenedor_franquicias_section1{
-    grid-area: section1;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    height: fit-content;
-    align-items: flex-start;
-    position: relative;
-    bottom: 0px;
-}
+    .dashboard_estadísticas{
+        width: 700px;
+        position: relative;
+        bottom: 100px;}
 
 
-.contenedor_franquicias_main_hijo1{
-    display: flex;
-    
 
-    
-}
 
-.contenedor_franquicias_main_hijo2{
-    display: flex;
-}
 
-.dashboard_estadísticas{
-    width: 700px;
-    position: relative;
-    bottom: 100px;
-}
 
-.disable_button{
-    opacity: 0.6;
-    cursor: not-allowed;
-  }
+
+

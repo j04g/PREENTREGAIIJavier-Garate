@@ -39,13 +39,11 @@
       background-image:  linear-gradient(to left, rgb(222, 22, 22),rgb(174, 174, 249));
       align-items: center;
       color: white;
-      height: 222px;
+      height: 250px;
       width: 360px;
-      justify-content: center;
+      justify-content: flex-start;
       align-items: center;
       align-content: center;
-     
-      
       position: absolute;
       top: 660px;
       left: 0px;
@@ -85,7 +83,7 @@
   
   .franquicias_button{
     position: relative;
-    bottom: -60px;
+    bottom: -27px;
   }
   
   .animations4{
