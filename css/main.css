@@ -75,6 +75,32 @@
   100% {
     transform: translate(1px, -2px) rotate(-1deg); } }
 
+@media only screen and (max-width: 360px) {
+  .dropdown {
+    position: absolute;
+    display: inline-block;
+    color: #000000;
+    z-index: 2; }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    left: -100px;
+    background-color: #f1f1f1;
+    width: 160px;
+    z-index: 2; }
+  .dropdown-content:hover {
+    background-color: #ddd; }
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block; }
+  .dropdown:hover .dropdown-content {
+    font-family: 'Poppins', sans-serif;
+    display: block; }
+  .btn:hover, .dropdown:hover .btn {
+    background-color: #0b7dda; } }
+
 * {
   margin: 0;
   padding: 0;
@@ -90,11 +116,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1.7fr;
   grid-template-rows: 1.3fr 7.2fr 3fr 6.3fr 1.3fr;
-  grid-template-areas: "header nav nav nav nav"
- "main main main main main"
- "section1 section1 section1 section1 section1"
- "section2 section2 section2 section2 lateral"
- "footer footer footer footer footer";
+  grid-template-areas: "header nav nav nav nav" "main main main main main" "section1 section1 section1 section1 section1" "section2 section2 section2 section2 lateral" "footer footer footer footer footer";
   row-gap: 60px; }
 
 /*propriedades de pagina menu.html - areas hijas*/
@@ -225,20 +247,11 @@ nav ul li a.highlight:hover {
   background-image: radial-gradient(circle, #1616de, #626bcb);
   padding: 20px;
   width: 480px;
-  height: 230px;
+  height: 200px;
   z-index: 1;
   position: absolute;
   right: 0px;
   top: 246px; }
-
-main div h2 {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 300;
-  font-size: 30px; }
-
-main div p {
-  font-family: 'Poppins', sans-serif;
-  font-size: 17px; }
 
 .contenedor_index_i2 {
   display: flex;
@@ -254,39 +267,33 @@ main div p {
   right: 0px;
   bottom: -470px;
   align-items: center; }
-
-.contenedor_index_i2_hijo2 {
-  font-family: 'Poppins', sans-serif;
-  background-image: url("../images/frentedondeencontrarnos.png");
-  background-size: cover;
-  padding: 10px;
-  width: 400px;
-  height: 200px; }
-
-.contenedor_index_i2_hijo2:hover {
-  animation: shake 0.5s;
-  animation-iteration-count: infinite; }
-
-.contenedor_index_i2_hijo1 {
-  width: 270px;
-  height: 200px; }
-
-.contenedor_index_i2_hijo1 h3 {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 900;
-  font-size: 25px; }
-
-.contenedor_index_i2_hijo1 p {
-  font-family: 'Poppins', sans-serif;
-  font-size: 13px; }
-
-.contenedor_index_i2_hijo3 {
-  font-family: 'Poppins', sans-serif;
-  background-image: url("../images/mapa.png");
-  background-size: cover;
-  padding: 30px;
-  width: 400px;
-  height: 200px; }
+  .contenedor_index_i2 .contenedor_index_i2_hijo1 {
+    width: 270px;
+    height: 200px; }
+  .contenedor_index_i2 .contenedor_index_i2_hijo1 h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    font-size: 25px; }
+  .contenedor_index_i2 .contenedor_index_i2_hijo1 p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px; }
+  .contenedor_index_i2 .contenedor_index_i2_hijo2 {
+    font-family: 'Poppins', sans-serif;
+    background-image: url("../images/frentedondeencontrarnos.png");
+    background-size: cover;
+    padding: 10px;
+    width: 400px;
+    height: 200px; }
+    .contenedor_index_i2 .contenedor_index_i2_hijo2:hover {
+      animation: shake 0.5s;
+      animation-iteration-count: infinite; }
+  .contenedor_index_i2 .contenedor_index_i2_hijo3 {
+    font-family: 'Poppins', sans-serif;
+    background-image: url("../images/mapa.png");
+    background-size: cover;
+    padding: 30px;
+    width: 400px;
+    height: 200px; }
 
 /* SECTION 1*/
 .contenedor_pagina_menu_section1 div {
@@ -315,6 +322,8 @@ main div p {
   display: inline-block;
   position: relative;
   transition: 0.5s; }
+  .button:hover {
+    padding-right: 25px; }
 
 .button:after {
   content: '\00bb';
@@ -323,9 +332,6 @@ main div p {
   top: 0;
   right: -20px;
   transition: 0.5s; }
-
-.button:hover {
-  padding-right: 25px; }
 
 .button:hover:after {
   cursor: pointer;
@@ -399,12 +405,7 @@ footer div img {
   display: grid;
   grid-template-columns: 1fr 3fr;
   grid-template-rows: 0.6fr 3fr 2.2fr 2fr 2.2fr 0.7fr;
-  grid-template-areas: "header nav"
- "main main"
- "section1 section1"
- "section2 section2"
- "section3 section3"
- "footer footer";
+  grid-template-areas: "header nav" "main main" "section1 section1" "section2 section2" "section3 section3" "footer footer";
   row-gap: 40px; }
 
 /*MAIN*/
@@ -429,22 +430,19 @@ footer div img {
   top: 15px;
   left: 98px;
   z-index: 2; }
+  .carta_body_main_i .carta_body_main_i h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px; }
 
-.carta_body_main_i h2 {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 100;
-  font-size: 40px; }
-
-body .Carta_main div i h2 {
+.carta_body_main_i p {
   font-family: 'Poppins', sans-serif;
   font-weight: 100;
   justify-content: center;
   align-items: center;
-  font-size: 40px; }
-
-body .Carta_main div i p {
-  font-family: 'Poppins', sans-serif;
-  font-size: 20px; }
+  font-size: 22px; }
 
 .carta_button {
   font-family: 'Poppins', sans-serif;
@@ -465,10 +463,9 @@ body .Carta_main div i p {
   border: none;
   cursor: pointer;
   border-radius: 5px; }
-
-.carta_button:hover {
-  background-color: black;
-  color: white; }
+  .carta_button:hover {
+    background-color: black;
+    color: white; }
 
 .container .btn:hover {
   background-color: black;
@@ -521,12 +518,7 @@ body .Carta_main div i p {
   display: grid;
   grid-template-columns: 1fr 3fr;
   grid-template-rows: 1fr 3fr 3fr 3fr 5fr 0.7fr;
-  grid-template-areas: "header nav"
- "main main"
- "section1 section1"
- "section2 section2"
- "section3 section3"
- "footer footer";
+  grid-template-areas: "header nav" "main main" "section1 section1" "section2 section2" "section3 section3" "footer footer";
   row-gap: 30px; }
 
 /*MAIN*/
@@ -539,13 +531,6 @@ body .Carta_main div i p {
   background-position: center;
   margin-bottom: 0px;
   margin-left: 0px; }
-
-.historia_main_carousel {
-  display: flex;
-  height: 400px;
-  width: 200px;
-  position: relative;
-  top: 200px; }
 
 .historia_main_i {
   display: flex;
@@ -560,18 +545,16 @@ body .Carta_main div i p {
   top: 440px;
   padding: 40px; }
 
-.historia_boton1 {
+.historia_boton1, .historia_boton2, .historia_boton3 {
   position: relative;
   top: 85px;
   height: 70px; }
 
 .historia_boton2 {
-  position: relative;
   bottom: -77px;
   height: 70px; }
 
 .historia_boton3 {
-  position: relative;
   bottom: -67px;
   height: 70px; }
 
@@ -598,6 +581,13 @@ body .Carta_main div i p {
   position: relative;
   top: 840px;
   left: 485px; }
+
+.historia_main_carousel {
+  display: flex;
+  height: 400px;
+  width: 200px;
+  position: relative;
+  top: 200px; }
 
 .historia_imagen_carousel_custom {
   height: 420px;
@@ -662,41 +652,6 @@ body .Carta_main div i p {
   font-size: 18px;
   color: white; }
 
-.historia_card {
-  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.2);
-  max-width: 300px;
-  margin: auto;
-  text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: whitesmoke;
-  position: relative;
-  height: 600px;
-  top: 800px; }
-
-.historia_card_title {
-  color: grey;
-  font-size: 18px; }
-
-.historia_card_button {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 8px;
-  color: white;
-  background-color: #000;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-  font-size: 18px; }
-
-.historia_card_button:hover {
-  opacity: 0.7; }
-
-.historia_card_position {
-  position: absolute;
-  top: 355px;
-  left: 580px; }
-
 .contenedor_historia_section3 {
   grid-area: section3;
   position: relative;
@@ -706,9 +661,8 @@ body .Carta_main div i p {
   top: 666px;
   box-shadow: 80px 80px 80px 80px inset red;
   opacity: 0.5; }
-
-.contenedor_historia_section3:hover {
-  opacity: 1.5; }
+  .contenedor_historia_section3:hover {
+    opacity: 1.5; }
 
 /*Propriedades por etiquetas página Tienda On Line*/
 /* BODY*/
@@ -716,10 +670,7 @@ body .Carta_main div i p {
   display: grid;
   grid-template-columns: 1fr 3fr;
   grid-template-rows: 1fr 1fr 0.7fr 0.7fr;
-  grid-template-areas: "header nav"
- "main main"
- "section section"
- "footer footer";
+  grid-template-areas: "header nav" "main main" "section section" "footer footer";
   row-gap: 160px; }
 
 .TiendaOnLine_main_flex-container {
@@ -779,11 +730,6 @@ body .Carta_main div i p {
   padding: 0px 45px 0px 45px;
   font-size: 20px; }
 
-.TiendaOnLine_main_flex-hijo3 {
-  padding: 10px;
-  justify-content: left;
-  align-items: center; }
-
 .TiendaOnLine_form_legend {
   color: aliceblue;
   font-size: 30px;
@@ -827,7 +773,10 @@ body .Carta_main div i p {
   background-color: #1616de;
   height: 550px;
   width: 30%;
-  background-image: linear-gradient(to left, #1616de, #aeaef9); }
+  background-image: linear-gradient(to left, #1616de, #aeaef9);
+  padding: 10px;
+  justify-content: left;
+  align-items: center; }
 
 .TiendaOnLine_section_flex-container {
   grid-area: section;
@@ -841,10 +790,7 @@ body .Carta_main div i p {
   display: grid;
   grid-template-columns: 1fr 3fr;
   grid-template-rows: 1fr 1fr 6fr 0.7fr;
-  grid-template-areas: "header nav"
- "main main"
- "section1 section1"
- "footer footer";
+  grid-template-areas: "header nav" "main main" "section1 section1" "footer footer";
   row-gap: 30px; }
 
 /*MAIN & SECTION 1*/
@@ -853,6 +799,20 @@ body .Carta_main div i p {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap; }
+  .contenedor_franquicias_main .contenedor_franquicias_main_hijo1 {
+    display: flex; }
+  .contenedor_franquicias_main .contenedor_franquicias_main_hijo2 {
+    display: flex; }
+
+.contenedor_franquicias_section1 {
+  grid-area: section1;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: fit-content;
+  align-items: flex-start;
+  position: relative;
+  bottom: 0px; }
 
 .franquicias_dashboard_estadísticas1 {
   display: flex;
@@ -866,7 +826,6 @@ body .Carta_main div i p {
   height: 300px;
   width: 72%;
   justify-content: center;
-  align-items: center;
   align-content: center;
   overflow: auto;
   float: inline-start;
@@ -877,30 +836,10 @@ body .Carta_main div i p {
   float: inline-end;
   z-index: 1; }
 
-.contenedor_franquicias_section1 {
-  grid-area: section1;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  height: fit-content;
-  align-items: flex-start;
-  position: relative;
-  bottom: 0px; }
-
-.contenedor_franquicias_main_hijo1 {
-  display: flex; }
-
-.contenedor_franquicias_main_hijo2 {
-  display: flex; }
-
 .dashboard_estadísticas {
   width: 700px;
   position: relative;
   bottom: 100px; }
-
-.disable_button {
-  opacity: 0.6;
-  cursor: not-allowed; }
 
 .boton_redondo {
   background-color: blue;
@@ -917,7 +856,51 @@ body .Carta_main div i p {
   right: 275px;
   top: 85px; }
 
-/*FLIP - CARD - DASHOBOARD*/
+/*CARD C.E.O. - HISTORIA.html*/
+.historia_card {
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: whitesmoke;
+  position: relative;
+  height: 605px;
+  top: 780px; }
+
+.historia_card_title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  color: grey;
+  font-size: 20px; }
+
+.historia_card_texto {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  color: grey;
+  font-size: 16px; }
+
+.historia_card_button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 20px; }
+
+.historia_card_button:hover {
+  opacity: 0.7; }
+
+.historia_card_position {
+  position: absolute;
+  top: 355px;
+  left: 580px; }
+
+/*FLIP - CARD - DASHOBOARD - FRANQUICIAS.html*/
 .flip-card {
   background-color: transparent;
   width: 300px;
@@ -976,14 +959,14 @@ body .Carta_main div i p {
   width: 160px;
   z-index: 2; }
 
+.dropdown-content:hover {
+  background-color: #ddd; }
+
 .dropdown-content a {
   color: black;
   padding: 12px 16px;
   text-decoration: none;
   display: block; }
-
-.dropdown-content a:hover {
-  background-color: #ddd; }
 
 .dropdown:hover .dropdown-content {
   font-family: 'Poppins', sans-serif;
@@ -1472,13 +1455,7 @@ a {
     FONT-WEIGHT: 100;
     FONT-WEIGHT: 100;
     font-variant: diagonal-fractions;
-    grid-template-areas: "header"
- "nav"
- "main"
- "section1"
- "section2"
- "section3"
- "footer";
+    grid-template-areas: "header" "nav" "main" "section1" "section2" "section3" "footer";
     justify-items: stretch;
     justify-content: center;
     align-content: stretch; }
@@ -1492,6 +1469,7 @@ a {
     background-size: cover;
     height: 360px;
     width: 360px;
+    z-index: 1;
     /* z-index: 2; */
     position: absolute;
     top: 280px; }
@@ -1503,11 +1481,10 @@ a {
     padding: 20px;
     width: 360px;
     height: 124px;
-    z-index: 2;
     position: absolute;
     left: 0px;
     top: 360px;
-    z-index: 2; }
+    z-index: 1; }
   .carta_body_main_i h2 {
     font-family: 'Poppins', sans-serif;
     font-weight: 100;
@@ -1540,8 +1517,8 @@ a {
     border: none;
     cursor: pointer;
     border-radius: 5px;
-    position: relative;
-    bottom: 5px; }
+    position: absolute;
+    bottom: -140px; }
   .carta_button:hover {
     background-color: black;
     color: white; }
@@ -1615,12 +1592,7 @@ a {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 0.4fr 0.4fr 3fr 2.8fr 1fr 0.7fr;
-    grid-template-areas: "header"
- "nav"
- "main"
- "section1"
- "section2"
- "footer";
+    grid-template-areas: "header" "nav" "main" "section1" "section2" "footer";
     row-gap: 20px; } }
 
 @media only screen and (max-width: 360px) {
@@ -1712,7 +1684,7 @@ a {
     color: white;
     display: inline;
     padding: 8px;
-    font-size: 12px;
+    font-size: 13px;
     font-family: 'Poppins', sans-serif;
     justify-content: center;
     justify-items: center;
@@ -1760,10 +1732,15 @@ a {
   main i h2 {
     font-family: 'Poppins', sans-serif;
     font-weight: 100;
-    font-size: 20px; } }
+    font-size: 24px; } }
 
 @media only screen and (max-width: 360px) {
   main i p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px; } }
+
+@media only screen and (max-width: 360px) {
+  main div p {
     font-family: 'Poppins', sans-serif;
     font-size: 15px; } }
 
@@ -1936,14 +1913,14 @@ a {
     display: flex;
     font-family: 'Poppins', sans-serif;
     font-weight: 100;
-    font-size: 20px;
+    font-size: 30px;
     color: white; } }
 
 @media only screen and (max-width: 360px) {
   .contenedor_pagina_lateral_p {
     display: flex;
     font-family: 'Poppins', sans-serif;
-    font-size: 14px;
+    font-size: 15px;
     color: white; } }
 
 @media only screen and (max-width: 360px) {
@@ -2029,6 +2006,21 @@ a {
     border-radius: 25px; } }
 
 @media only screen and (max-width: 360px) {
+  .contenedor_pagina_lateral_h2 {
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100;
+    font-size: 24px;
+    color: white; } }
+
+@media only screen and (max-width: 360px) {
+  .contenedor_pagina_lateral_p {
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    color: white; } }
+
+@media only screen and (max-width: 360px) {
   .tooltip_mapa {
     position: relative;
     display: inline-block;
@@ -2043,7 +2035,7 @@ a {
     position: absolute;
     z-index: 1;
     bottom: 159px;
-    left: 70px;
+    left: -100px;
     margin-left: -60px;
     font-size: 13px;
     padding: 5px;
@@ -2091,14 +2083,8 @@ a {
   .contenedor_pagina_historia {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.4fr 0.4fr 1fr 1fr 1fr 1.15fr 0.5fr;
-    grid-template-areas: "header"
- "nav"
- "main"
- "section1"
- "section2"
- "section3"
- "footer";
+    grid-template-rows: 0.4fr 0.4fr 1.25fr 1.25fr 1.25fr 1.15fr 0.6fr;
+    grid-template-areas: "header" "nav" "main" "section1" "section2" "section3" "footer";
     column-width: 360px;
     row-gap: 20px;
     background-image: url(../images/comedor.jpg);
@@ -2130,32 +2116,51 @@ a {
     height: 444px;
     width: 100vw;
     justify-content: flex-start;
+    padding: 13px;
+    z-index: 1;
+    position: relative;
+    top: -30px;
+    left: -30px; }
+  .contenedor_historia_section1 {
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(to left, #1616de, #aeaef9);
+    height: 380px;
+    width: 100%;
+    justify-content: normal;
     padding: 15px;
     z-index: 1;
     position: relative;
-    top: -115px; }
-  .contenedor_historia_section1 {
-    grid-area: section1;
-    display: flex;
-    flex-direction: column; }
+    top: 211px; }
   .historia_section1_i {
     display: flex;
     flex-direction: column;
     background-image: linear-gradient(to left, #1616de, #aeaef9);
-    height: 464px;
+    height: 495px;
     width: 360px;
     justify-content: normal;
-    padding: 20px;
+    padding: 10px;
     z-index: 1;
-    float: inline-start;
     position: relative;
-    top: 120px; }
+    top: -111px;
+    left: -15px; }
+  .historia_section1_i h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100;
+    font-size: 25px;
+    color: white;
+    width: 360px;
+    padding: 15px; }
+  .historia_section1_i p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    color: white; }
   .contenedor_historia_section1_carousel {
     height: 360px;
     width: 300px;
     position: relative;
-    top: 216px;
-    left: 27px; }
+    top: -5px;
+    left: 14px; }
   .historia_imagen_carousel_custom {
     height: 270px;
     width: 100%;
@@ -2169,29 +2174,21 @@ a {
     font-size: 12px; }
   .contenedor_historia_section2 {
     grid-area: section2;
-    display: flex; }
+    display: flex;
+    position: absolute;
+    bottom: -1111px; }
   .historia_section2_i {
     display: flex;
     flex-direction: column;
     background-image: linear-gradient(to left, #1616de, #fa0606);
-    height: 719px;
+    height: 689px;
     width: 100vw;
     justify-content: normal;
     padding: 5px;
     z-index: 1;
     float: inline-start;
     position: relative;
-    top: 160px; }
-  .historia_main_i h2 {
-    width: fit-content;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 100;
-    font-size: 25px;
-    color: white; }
-  .historia_main_i p {
-    font-family: 'Poppins', sans-serif;
-    font-size: 15px;
-    color: white; }
+    top: 1415px; }
   .historia_section1_i h2 {
     width: fit-content;
     font-family: 'Poppins', sans-serif;
@@ -2200,13 +2197,7 @@ a {
     color: white; }
   .historia_section1_i p {
     font-family: 'Poppins', sans-serif;
-    font-size: 15px;
-    color: white; }
-  .historia_section2_i h2 {
-    width: fit-content;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 100;
-    font-size: 25px;
+    font-size: 18px;
     color: white; }
   .historia_section2_i p {
     font-family: 'Poppins', sans-serif;
@@ -2223,11 +2214,14 @@ a {
     height: 495px;
     position: relative;
     top: -70px;
-    font-size: 14px;
+    font-size: 12px;
     right: 0px; }
   .historia_card_title {
     color: grey;
-    font-size: 18px; }
+    font-size: 14px; }
+  .historia_card_texto {
+    color: grey;
+    font-size: 14px; }
   .historia_card_button {
     border: none;
     outline: 0;
@@ -2238,7 +2232,7 @@ a {
     text-align: center;
     cursor: pointer;
     width: 100%;
-    font-size: 12px; }
+    font-size: 16px; }
   .historia_card_button:hover {
     opacity: 0.7; }
   .contenedor_historia_section3 {
@@ -2247,7 +2241,7 @@ a {
     left: 13px;
     width: 333px;
     height: 843px;
-    top: 82px;
+    top: -130px;
     box-shadow: 80px 80px 80px 80px inset red;
     border-radius: 4px;
     opacity: 0.5;
@@ -2256,23 +2250,24 @@ a {
     opacity: 1.5; }
   .historia_card_position {
     position: absolute;
-    top: 1194px;
+    top: 1215px;
     left: 54px; }
   button.btn.btn-primary {
     position: absolute;
-    bottom: -346px; }
-  .historia_boton1 {
+    bottom: -73px; }
+  .historia_boton1, .historia_boton2, .historia_boton3 {
     position: relative;
-    top: 85px;
+    top: -29px;
     height: 70px; }
   .historia_boton2 {
     position: relative;
     bottom: -77px;
     height: 70px; }
   .historia_boton3 {
-    position: relative;
-    bottom: -67px;
-    height: 70px; } }
+    position: absolute;
+    top: 410px;
+    left: 180px;
+    height: 180px; } }
 
 /*QUERIES for Mobile phones - galaxy s8*/
 /* FRANQUICIAS.html*/
@@ -2281,11 +2276,7 @@ a {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 0.4fr 0.4fr 0.9fr 7.2fr 0.7fr;
-    grid-template-areas: "header"
- "nav"
- "main"
- "section1"
- "footer"; }
+    grid-template-areas: "header" "nav" "main" "section1" "footer"; }
   /*MAIN & SECTION 1*/
   .contenedor_franquicias_main {
     grid-area: main;
@@ -2301,9 +2292,9 @@ a {
     background-image: linear-gradient(to left, #de1616, #aeaef9);
     align-items: center;
     color: white;
-    height: 222px;
+    height: 250px;
     width: 360px;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     align-content: center;
     position: absolute;
@@ -2332,7 +2323,7 @@ a {
     display: flex; }
   .franquicias_button {
     position: relative;
-    bottom: -60px; }
+    bottom: -27px; }
   .animations4 {
     width: 120px;
     height: 70px;
@@ -2575,11 +2566,7 @@ a {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 0.4fr 0.65fr 2fr 1fr 0.7fr;
-    grid-template-areas: "header"
-   "nav"
-   "main"
-   "section"
-   "footer"; }
+    grid-template-areas: "header"   "nav"   "main"   "section"   "footer"; }
   .TiendaOnLine_main_flex-container {
     grid-area: main;
     /* display: flex; */

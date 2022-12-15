@@ -45,78 +45,61 @@
   height: 550px;
   width: 30%;
   padding: 10px;
-  justify-content: center;
-  }
+  justify-content: center;}
 
-.TiendaOnLine_main_flex-hijo1 h2{
-    width: fit-content;
- font-family: 'Poppins', sans-serif; font-weight: 100;
-  font-size: 30px;
-  color: white;
-  animation: bounceIn;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-}
+    .TiendaOnLine_main_flex-hijo1 h2{
+      width: fit-content;
+    font-family: 'Poppins', sans-serif; font-weight: 100;
+    font-size: 30px;
+    color: white;
+    animation: bounceIn;
+      animation-duration: 4s;
+      animation-iteration-count: infinite;
+    }
 
-.TiendaOnLine_main_flex-hijo1 p{
-  font-family: 'Poppins', sans-serif;
-  font-size: 20px;
-  color: white;
-  
-}
+        .TiendaOnLine_main_flex-hijo1 p{
+        font-family: 'Poppins', sans-serif;
+        font-size: 20px;
+        color: white;}
+
+        
 
 
 
 .TiendaOnLine_main_flex-hijo2{
 
-  display: flex;
-  flex-direction: column;
-  background-image: url("../images/gif\ carrito.gif");
-  background-size: 80%;
-  background-repeat: no-repeat;
-  background-position: bottom;
-  height: 550px;
-  width: 45%;
-  filter: drop-shadow(8px 8px 10px gray);
-  font-family: 'Poppins', sans-serif;
-    font-size: large;
-}
+display: flex;
+flex-direction: column;
+background-image: url("../images/gif\ carrito.gif");
+background-size: 80%;
+background-repeat: no-repeat;
+background-position: bottom;
+height: 550px;
+width: 45%;
+filter: drop-shadow(8px 8px 10px gray);
+font-family: 'Poppins', sans-serif;
+  font-size: large;}
 
-.TiendaOnLine_main_flex-hijo2 article{
-    justify-items: center;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    color:white;
-    text-shadow: 2px 2px 4px #000000;
-    padding: 0px 45px 0px 45px;
-    font-size: 20px;
-    }
-
-
-.TiendaOnLine_main_flex-hijo3 {
-    padding: 10px;
-    
-    justify-content: left;
-    align-items: center;
-    
-  }
+        .TiendaOnLine_main_flex-hijo2 article{
+        justify-items: center;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        color:white;
+        text-shadow: 2px 2px 4px #000000;
+        padding: 0px 45px 0px 45px;
+        font-size: 20px;}
   
+
 .TiendaOnLine_form_legend{
     color: aliceblue;
     font-size: 30px;
-    font-family: 'Poppins', sans-serif;
-    
-    
-
-  }
+    font-family: 'Poppins', sans-serif;}
 
 .TiendaOnLine_form_label{
     color: aliceblue;
     font-size: 15px;
-    font-family: 'Poppins', sans-serif;
-    
-}
+    font-family: 'Poppins', sans-serif;}
 
 .TiendaOnLine_form_placeholder{
     color: black;
@@ -142,20 +125,23 @@
     margin: 8px 0px;
     padding: 12px 20px 12px 20px;
     transition: width 1.5 ease-in-out 3s;
-    
     border: solid;
     cursor: pointer;
     position: relative;
     left: 100px;
     }
 
+
 .TiendaOnLine_main_flex-hijo3{
-  display: flex;
-  flex-direction: row;
-  background-color: rgb(22, 22, 222);
-  height: 550px;
-  width: 30%;
-  background-image: linear-gradient(to left, rgb(22, 22, 222),rgb(174, 174, 249));
+display: flex;
+flex-direction: row;
+background-color: rgb(22, 22, 222);
+height: 550px;
+width: 30%;
+background-image: linear-gradient(to left, rgb(22, 22, 222),rgb(174, 174, 249));
+padding: 10px;
+justify-content: left;
+align-items: center;
 }
 
 .TiendaOnLine_section_flex-container{
@@ -163,8 +149,4 @@
     position: relative;
     width: 1200px;
     left: 8%;
-     
-    padding: 0px;
-    
-    
-}
+    padding: 0px;}

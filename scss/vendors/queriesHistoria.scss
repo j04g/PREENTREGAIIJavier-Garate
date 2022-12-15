@@ -10,7 +10,7 @@
 .contenedor_pagina_historia{
 display: grid;
 grid-template-columns: 1fr;
-grid-template-rows: 0.4fr 0.4fr 1fr 1fr 1fr 1.15fr 0.5fr;
+grid-template-rows: 0.4fr 0.4fr 1.25fr 1.25fr 1.25fr 1.15fr 0.6fr;
 grid-template-areas:
 "header"
 "nav"
@@ -61,59 +61,70 @@ background-image: linear-gradient(to right, rgb(255, 0, 0),rgb(243, 194, 194));
 height: 444px;
 width: 100vw;
 justify-content: flex-start;
-padding: 15px;
-
+padding: 13px;
 z-index: 1;
 position: relative;
-top: -115px;
+top: -30px;
+left: -30px;
 }
 
 
-.contenedor_historia_section1{
-grid-area: section1;
-display: flex;
-flex-direction: column;
-}
+.contenedor_historia_section1 {
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(to left, #1616de, #aeaef9);
+    height: 380px;
+    width: 100%;
+    justify-content: normal;
+    padding: 15px;
+    z-index: 1;
+    position: relative;
+    top: 211px;}
 
+    .historia_section1_i{ 
+        display: flex;
+        flex-direction: column;
+        background-image: linear-gradient(to left, rgb(22, 22, 222),rgb(174, 174, 249));
+        height: 495px;
+        width: 360px;
+        justify-content: normal;
+        padding: 10px;
+        z-index: 1;
+        position: relative;
+        top: -111px;
 
-.historia_section1_i{
-display: flex;
-flex-direction: column;
-background-image: linear-gradient(to left, rgb(22, 22, 222),rgb(174, 174, 249));
-height: 464px;
+    left: -15px;}
+
+.historia_section1_i h2{
+
+font-family: 'Poppins', sans-serif; font-weight: 100;
+font-size: 25px;
+color: white;
 width: 360px;
-justify-content: normal;
-padding: 20px;
-z-index: 1;
-
-float:inline-start;
-position: relative;
-top: 120px;
+padding: 15px;
 }
+
+        
+.historia_section1_i p{
+font-family: 'Poppins', sans-serif;
+font-size: 15px;
+color: white;}
+    
+    
 
 .contenedor_historia_section1_carousel{
-
 height: 360px;
-
 width: 300px;
-
 position: relative;
-
-top: 216px;
-
-left: 27px;
+top: -5px;
+left: 14px;
 }
 
 .historia_imagen_carousel_custom {
-
 height: 270px;
-
 width: 100%;
-
 object-fit: cover;
-
 font-size: 12px;
-
 color: white;
 }
 
@@ -135,13 +146,15 @@ font-size: 12px;
 .contenedor_historia_section2{
 grid-area: section2;
 display: flex;
+position: absolute;
+bottom: -1111px;
 }
 
 .historia_section2_i{
 display: flex;
 flex-direction: column;
 background-image: linear-gradient(to left, rgb(22, 22, 222),rgb(250, 6, 6));
-height: 719px;
+height: 689px;
 width: 100vw;
 justify-content: normal;
 padding: 5px;
@@ -149,43 +162,42 @@ z-index: 1;
 
 float:inline-start;
 position: relative;
-top: 160px;
+top: 1415px;
 }
 
 
 
 
-.historia_main_i h2{width: fit-content;font-family: 'Poppins', sans-serif;font-weight: 100;font-size: 25px;color: white;}
-
-
-.historia_main_i p{font-family: 'Poppins', sans-serif;font-size: 15px;color: white;}
 
 .historia_section1_i h2{
-width: fit-content;
-font-family: 'Poppins', sans-serif; font-weight: 100;
-font-size: 25px;
-color: white;
-}
-
-
-.historia_section1_i p{font-family: 'Poppins', sans-serif;font-size: 15px;color: white;}
-
-.historia_section2_i h2{
-width: fit-content;
-font-family: 'Poppins', sans-serif; font-weight: 100;
-font-size: 25px;
-color: white;
-}
+    width: fit-content;
+    font-family: 'Poppins', sans-serif; font-weight: 100;
+    font-size: 25px;
+    color: white;
+    }
+    
+          
+    .historia_section1_i p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color: white;
+    
+    }
 
 
 .historia_section2_i p{font-family: 'Poppins', sans-serif;font-size: 15px;color: white;}
 
-.historia_card{box-shadow: 0 4px 12px 0 rgb(0, 0,0);max-width: 252px;/* height: 171px; */margin: auto;text-align: center;font-family: Arial, Helvetica, sans-serif;background-color: whitesmoke; height:495px;position: relative;top: -70px;font-size: 14px;right: 0px;}
+.historia_card{box-shadow: 0 4px 12px 0 rgb(0, 0,0);max-width: 252px;/* height: 171px; */margin: auto;text-align: center;font-family: Arial, Helvetica, sans-serif;background-color: whitesmoke; height:495px;position: relative;top: -70px;font-size: 12px;right: 0px;}
 
 .historia_card_title{
 color: grey;
-font-size: 18px;
+font-size: 14px;
 }
+
+.historia_card_texto{
+    color: grey;
+    font-size: 14px;
+    }
 
 .historia_card_button{
 border: none;
@@ -197,7 +209,7 @@ background-color: #000;
 text-align: center;
 cursor: pointer;
 width: 100%;
-font-size: 12px;
+font-size: 16px;
 }
 
 .historia_card_button:hover{
@@ -210,7 +222,7 @@ position: relative;
 left: 13px;
 width: 333px;
 height: 843px;
-top: 82px;
+top: -130px;
 box-shadow: 80px 80px 80px 80px inset red;
 border-radius: 4px;
 opacity: 0.5;
@@ -223,18 +235,18 @@ opacity:1.5;}
 
 .historia_card_position{
 position: absolute;
-top: 1194px;
+top: 1215px;
 left: 54px;
 }
 
 button.btn.btn-primary {
 position: absolute;
-bottom: -346px;
+bottom: -73px;
 }
 
 .historia_boton1{
 position: relative;
-top:85px;
+top:-29px;
 height: 70px;
 
 }
@@ -247,9 +259,10 @@ height: 70px;
 }
 
 .historia_boton3{
-position: relative;
-bottom:-67px;
-height: 70px;
+position: absolute;
+top: 410px;
+left: 180px;
+height: 180px;
 
 }
 

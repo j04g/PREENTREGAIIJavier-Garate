@@ -1,5 +1,57 @@
 
-/*FLIP - CARD - DASHOBOARD*/
+/*CARD C.E.O. - HISTORIA.html*/
+.historia_card{
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: whitesmoke;
+    position: relative;
+    height: 605px;
+      top: 780px;
+  }
+  
+  .historia_card_title{
+    font-family: 'Poppins', sans-serif; font-weight: 300;
+      color: grey;
+      font-size: 20px;
+  }
+  
+  .historia_card_texto{
+    font-family: 'Poppins', sans-serif; font-weight: 300;
+      color: grey;
+      font-size: 16px;
+  }
+   
+
+
+  .historia_card_button{
+      border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 20px;
+  }
+  
+  .historia_card_button:hover{
+      opacity: 0.7;
+  }
+  
+  .historia_card_position{
+    position: absolute;
+    top: 355px;
+    left: 580px;
+  }
+
+
+
+/*FLIP - CARD - DASHOBOARD - FRANQUICIAS.html*/
 
 
 
