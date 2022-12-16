@@ -1,195 +1,210 @@
+ 
+ /*Propriedades por etiquetas página Tienda On Line*/
 
-@media only screen and (max-width:360px) {
-    .contenedor_pagina_TiendaOnLine{
-    
-    display: grid;
-    
-    grid-template-columns: 1fr;
-    
-    grid-template-rows: 0.4fr 0.4fr 1.4fr 0.6fr 0.7fr;
-    
-    grid-template-areas:
-    
-    "header"
-    
-    "nav"
-       
-    "main"
-        
-    "section"
-    
-    "footer";
-    }
-    
-    
-    .TiendaOnLine_main_flex-container{
-      grid-area: main;
-      /* display: flex; */
-      flex-direction: column;
-      justify-content: flex-start;
-      position: relative;
-      width: 360px;
-      top: 0px;
-      left: 0px;
-      padding: 0px;
-      flex-wrap: wrap;
-    }
-    
-    
-    
-    
-    .TiendaOnLine_main_flex-hijo1{
-      display: flex;
-      flex-direction: column;
-      background-image: linear-gradient(to right, rgb(255, 0, 0),rgb(243, 194, 194));
-      height: 400px;
-      width: 360px;
-      padding: 16px;
-      /* justify-content: flex-start; */
-      position: absolute;
-      top: -482px;
-      }
-    
-    .TiendaOnLine_main_flex-hijo1 h2{
-        width: fit-content;
-        font-family: 'Poppins', sans-serif;
-        font-weight: 100;
-        font-size: 30px;
-        color: white;
-        animation: bounceIn;
-        animation-duration: 4s;
-        animation-iteration-count: infinite;
-    }
-    
-    .TiendaOnLine_main_flex-hijo1 p{
-      font-family: 'Poppins', sans-serif;
-      font-size: 16px;
-      color: white;
-    }
-    
-    
-    
-    .TiendaOnLine_main_flex-hijo2{
-    
-    display: flex;
-    
+ /*QUERIES for Mobile phones - galaxy s8*/                                                
+
+
+ @media only screen and (max-width:360px) {
+  .contenedor_pagina_TiendaOnLine{
+  
+  display: grid;
+  
+  grid-template-columns: 1fr;
+  
+  grid-template-rows: 0.4fr 0.65fr 2fr 1fr 0.7fr;
+  
+  grid-template-areas:
+  
+  
+  "header"
+  
+  
+  "nav"
+  
+  
+  "main"
+  
+  
+  "section"
+  
+  
+  "footer";
+  
+  
+  }
+  
+  
+  .TiendaOnLine_main_flex-container{
+    grid-area: main;
+    /* display: flex; */
     flex-direction: column;
-    
-    background-image: url("../images/gif\ carrito.gif");
-    
-    background-size: 80%;
-    
-    background-repeat: no-repeat;
-    
-    background-position: bottom;
-    
-    height: 350px;
-    
+    justify-content: flex-start;
+    position: relative;
     width: 360px;
-    
-    filter: drop-shadow(8px 8px 10px gray);
-    
-    font-family: 'Poppins', sans-serif;
-    
-    font-size: large;
-    
+    top: 0px;
+    left: 0px;
+    padding: 0px;
+    flex-wrap: wrap;
+  }
+  
+  
+  
+  
+  .TiendaOnLine_main_flex-hijo1{
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(to right, rgb(255, 0, 0),rgb(243, 194, 194));
+    height: 400px;
+    width: 360px;
+    padding: 16px;
+    /* justify-content: flex-start; */
     position: absolute;
-    
-    /* top: 348px; */
+    top: -482px;
+    }
+  
+  .TiendaOnLine_main_flex-hijo1 h2{
+      width: fit-content;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 100;
+      font-size: 30px;
+      color: white;
+      animation: bounceIn;
+      animation-duration: 4s;
+      animation-iteration-count: infinite;
+  }
+  
+  .TiendaOnLine_main_flex-hijo1 p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: white;
+  }
+  
+  
+  
+  .TiendaOnLine_main_flex-hijo2{
+  
+  display: flex;
+  
+  flex-direction: column;
+  
+  background-image: url("../images/gif\ carrito.gif");
+  
+  background-size: 80%;
+  
+  background-repeat: no-repeat;
+  
+  background-position: bottom;
+  
+  height: 350px;
+  
+  width: 360px;
+  
+  filter: drop-shadow(8px 8px 10px gray);
+  
+  font-family: 'Poppins', sans-serif;
+  
+  font-size: large;
+  
+  position: absolute;
+  
+  /* top: 348px; */
+  }
+  
+  .TiendaOnLine_main_flex-hijo2 article{
+      justify-items: center;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+      color:white;
+      text-shadow: 2px 2px 4px #000000;
+      padding: 5px;
+      font-size: 16px;
+      width:  360px;
+      height: 80px;
+      position: absolute;
+      padding: 27px;
+      top: -41px;
+      }
+  
+  
+  .TiendaOnLine_main_flex-hijo3 {
+      padding: 3px;
+      justify-content: left;
+      align-items: center;
     }
     
-    .TiendaOnLine_main_flex-hijo2 article{
-        justify-items: center;
-        justify-content: center;
-        align-content: center;
-        align-items: center;
-        color:white;
-        text-shadow: 2px 2px 4px #000000;
-        padding: 5px;
-        font-size: 16px;
-        width:  360px;
-        height: 80px;
-        position: absolute;
-        padding: 27px;
-        top: -41px;
-        }
-    
-    
-    .TiendaOnLine_main_flex-hijo3 {
-        padding: 3px;
-        justify-content: left;
-        align-items: center;
+  .TiendaOnLine_form_legend{
+      color: aliceblue;
+      font-size: 20px;
+      font-family: 'Poppins', sans-serif;
+    }
+  
+  .TiendaOnLine_form_label{
+      color: aliceblue;
+      font-size: 10px;
+      font-family: 'Poppins', sans-serif;
+  }
+  
+  .TiendaOnLine_form_placeholder{
+      color: black;
+      font-size: 13px;
+      font-family: 'Poppins', sans-serif;
+  }
+  
+  .fa_fa-user_icon{
+      height: 8px;
+      width:8px;
+  }
+  
+  
+  
+  .TiendaOnLine_formulario :focus{
+      display: flex;
+      box-sizing: border-box;
+      width: 35%;
+      font-family: 'Poppins', sans-serif;
+      display: display-inside;
+      box-sizing: border-box;
+      left: auto;
+      border-radius: 12px;
+      padding: 30px 30px;
+      margin: 8px 0px;
+      padding: 12px 20px 12px 20px;
+      transition: width 1.5 ease-in-out 3s;
+      
+      border: solid;
+      cursor: pointer;
+      position: relative;
+      left: 100px;
+      }
+  
+  
+  
+  .TiendaOnLine_main_flex-hijo3{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(22, 22, 222);
+    height: 550px;
+    width: 360px;
+    background-image: linear-gradient(to left, rgb(22, 22, 222),rgb(174, 174, 249));
+    flex-wrap: wrap;
+    padding: 5px;
+    position: absolute;
+    top: 407px;
+  }
+  
+  .TiendaOnLine_section_flex-container{
+      grid-area: section;
+      position: relative;
+      width: 320px;
+      height:200px;
+      top: -10px;
+      left: 20px;
+      padding: 0px;
       }
       
-    .TiendaOnLine_form_legend{
-        color: aliceblue;
-        font-size: 20px;
-        font-family: 'Poppins', sans-serif;
-      }
-    
-    .TiendaOnLine_form_label{
-        color: aliceblue;
-        font-size: 10px;
-        font-family: 'Poppins', sans-serif;
-    }
-    
-    .TiendaOnLine_form_placeholder{
-        color: black;
-        font-size: 13px;
-        font-family: 'Poppins', sans-serif;
-    }
-    
-    .fa_fa-user_icon{
-        height: 8px;
-        width:8px;
-    }
-    
-    
-    
-    .TiendaOnLine_formulario :focus{
-        display: flex;
-        box-sizing: border-box;
-        width: 35%;
-        font-family: 'Poppins', sans-serif;
-        display: display-inside;
-        box-sizing: border-box;
-        left: auto;
-        border-radius: 12px;
-        padding: 30px 30px;
-        margin: 8px 0px;
-        padding: 12px 20px 12px 20px;
-        transition: width 1.5 ease-in-out 3s;
-        
-        border: solid;
-        cursor: pointer;
-        position: relative;
-        left: 100px;
-        }
-    
-    
-    
-    .TiendaOnLine_main_flex-hijo3{
-      display: flex;
-      flex-direction: row;
-      background-color: rgb(22, 22, 222);
-      height: 550px;
-      width: 360px;
-      background-image: linear-gradient(to left, rgb(22, 22, 222),rgb(174, 174, 249));
-      flex-wrap: wrap;
-      padding: 5px;
-      position: absolute;
-      top: 407px;
-    }
-    
-    .TiendaOnLine_section_flex-container{
-        grid-area: section;
-        position: relative;
-        width: 320px;
-        top: 80px;
-        left: 20px;
-        padding: 0px;
-        }
-        
-        
-    }
-    
+      
+  }
+  
+  
+  

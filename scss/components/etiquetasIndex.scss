@@ -1,24 +1,37 @@
-                            /*Propriedades por etiquetas -páginas INDEX*/
 
+/*Propriedades por etiquetas INDEX*/
 
+/* BODY*/
 
-                            //INDEX - HEADER
+/*HEADER*/
+
 
 h1{    
-    color: rgb(255, 255, 255);  text-transform: uppercase; font-size: 50px; font-family: 'Poppins', sans-serif; font-weight: 500; width: 500px;
+    color: rgb(255, 255, 255);  
+    text-transform: uppercase; 
+    font-size: 50px; 
+    font-family: 'Poppins', sans-serif; 
+    font-weight: 500; 
+    width: 500px;
     animation:pulse;
     animation-duration: 1s;
     animation-iteration-count: infinite;
     }
+     
 
-                            // INDEX - NAV
+
+/*NAV*/
+
+
+
 
 nav ul{
     display: flex;
     flex-direction: row;
     list-style: none;
-    color: white;  font-family: 'Poppins', sans-serif; align-items: center;
-     li{
+    color: white;  font-family: 'Poppins', sans-serif; align-items: center;}
+
+    nav ul li{
     display: flex;
     color: white; display: inline-block; padding: 8px;
     font-family: 'Poppins', sans-serif;
@@ -27,107 +40,218 @@ nav ul{
     align-items: baseline;
     align-content: center;
     margin: 0px;
-    overflow: auto;}
-    
-    &:hover{
+    overflow: auto;
+    padding: 10px;}
+
+    nav ul li a:hover{
 
     color: white;
     font-family: 'Poppins', sans-serif;
     font-size: 20px;}
-
-    .highlight:hover{
+     
+        
+    nav ul li a.highlight:hover{
 
     color: white;
     font-family: 'Poppins', sans-serif;
     font-size: 30px;}
-    }
+        
+    
 
 
-                            //INDEX - MAIN
+  
+
+/*MAIN*/
 
 .index_main_i{
-    font-family: 'Poppins', sans-serif;
-    color: white;
-    background-color: rgb(20, 9, 81);
-    background-image: radial-gradient(circle, rgb(22, 22, 222),rgb(98, 107, 203));
-    padding: 30px;
-    width: 450px;
-    height: 400px;
-    overflow: auto;
-    z-index: 1;
-    left: 0px;
-    bottom: 0px;
-    }
+font-family: 'Poppins', sans-serif;
+color: white;
+background-color: rgb(20, 9, 81);
+background-image: radial-gradient(circle, rgb(22, 22, 222),rgb(98, 107, 203));
+padding: 20px;
+width: 480px;
+height: 200px;
+z-index: 1;
+position: absolute;
+right: 0px;
+top: 246px;
+}
 
     
 
-main i h2{
-    font-family: 'Poppins', sans-serif; font-weight: 100;
-    font-size: 40px;
-    p{
-    font-family: 'Poppins', sans-serif;
-    font-size: 20px;
-}
-}
 
 
-                            // INDEX - Section1
+.contenedor_index_i2{
+display: flex;
+flex-direction: row;
+justify-content:space-evenly;
+background-color: whitesmoke;
+width: 100vw;
+height: 230px;
+padding-top: 10px;
+padding-bottom: 10px;
+position: absolute;
+z-index: 1;
+right: 0px;
+bottom: -470px;
+align-items: center;
+
+
+    .contenedor_index_i2_hijo1{
+    width: 270px;
+    height: 200px;}
+
+    .contenedor_index_i2_hijo1 h3{
+    font-family: 'Poppins', sans-serif; font-weight: 900;
+    font-size: 25px;}
+
+    .contenedor_index_i2_hijo1 p{
+    font-family: 'Poppins', sans-serif; 
+    font-size: 13px}
+
+        .contenedor_index_i2_hijo2{
+        font-family: 'Poppins', sans-serif;
+        background-image: url('../images/frentedondeencontrarnos.png');
+        background-size: cover;
+        padding: 10px;
+        width: 400px;
+        height: 200px;
+
+        &:hover{
+        animation: shake 0.5s;
+        animation-iteration-count: infinite;}
+
+        }
+
+            .contenedor_index_i2_hijo3{
+            font-family: 'Poppins', sans-serif;
+            background-image: url('../images/mapa.png');
+            background-size: cover;
+            padding: 30px;
+            width: 400px;
+            height: 200px;}
+
+            }
+
+    
+
+
+
+/* SECTION 1*/
+
 .contenedor_pagina_menu_section1 div{
-    width: 25%;
-    align-items: center;
-    align-content: center;
- }
+width: 25%;
+align-items: center;
+align-content: center;}
 
 
-                            // INDEX - Section2
+.button {
+position: relative;
+justify-content: center;
+justify-items: center;
+align-items: center;
+align-content: center;
+left: 25%;
+right: 25%;
+border-radius: 4px;
+background-color: #1e22f4;
+border: none;
+color: #FFFFFF;
+text-align: center;
+font-size: 28px;
+padding: 20px;
+width: 200px;
+transition: all 0.5s;
+margin: 5px;
+display: inline-block;
+position: relative;
+transition: 0.5s;
+
+    &:hover {
+    padding-right: 25px;
+    }
+}
+
+.button:after {
+content: '\00bb';
+position: absolute;
+opacity: 0;
+top: 0;
+right: -20px;
+transition: 0.5s;
+}
+
+.button:hover:after {
+cursor: pointer;
+opacity: 3;
+right: 0;
+}
+
+
+/*SECTION 2*/
 
 .contenedor_pagina_menu_section2{
     background-image: url("../images/patio.jpg");
-    background-size: cover;
-    }
+    background-size: cover;}
 
-                            //INDEX - Lateral
 
+/*Lateral*/
 
 .contenedor_pagina_menu_lateral{
-    color: white;
-    background-color: rgb(47, 6, 131);
-}
+display: flex;
+flex-direction: column;
+justify-content: center;
+justify-items: center;
+align-content: center;
+align-items: center;
+padding: 15px;}
 
 .contenedor_pagina_lateral_h2{
-    display: flex;
-    font-family: 'Poppins', sans-serif; font-weight: 100;
-    font-size: 40px;
-    color: white;
-  }
-  
-  .contenedor_pagina_lateral_p{
-    display: flex;
-    font-family: 'Poppins', sans-serif;
-    font-size: 20px;
-    color: white;
-    }
+display: flex;
+font-family: 'Poppins', sans-serif; font-weight: 100;
+font-size: 40px;
+color: white;}
 
-                            //INDEX - FOOTER
+.contenedor_pagina_lateral_p{
+display: flex;
+font-family: 'Poppins', sans-serif;
+font-size: 20px;
+color: white;}
+
+        
+  
+
+
+/*FOOTER*/
 
 footer ul{list-style: none;
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
-    width: 200px;
+    
+}
 
-span ul{
+
+footer ul{
+    
     width: 200px;
 }
+
+footer span ul{
+    
+    width: 200px;
 }
 
 footer div h2{
     display: inline;
-    ul div{
+    
+}
+
+footer div ul div{
+    
     width:fit-content;
     height:fit-content ;
     color: white;
     background-color: black;
-}
 }
 
 footer div img{
@@ -145,13 +269,3 @@ footer div img{
     border-radius: 25px;
 }
 
-
-                            
-
-
-
-
-
-
-
-    
