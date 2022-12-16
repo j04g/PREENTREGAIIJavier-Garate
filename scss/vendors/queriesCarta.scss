@@ -1,6 +1,6 @@
 /*QUERIES for Mobile phones - galaxy s8*/
 
-/* CARTA.html*/
+                                            /* CARTA.html*/
 
 
 @media only screen and (max-width:360px) {
@@ -24,8 +24,8 @@ padding: 5px 0;
 top: 100%;
 left: 0%;
 margin: 0px;
-height: 120px;
-width: 180px;
+height: 71px;
+width: 250px;
 position: absolute;
 z-index: 1;
 }
@@ -39,7 +39,7 @@ visibility: visible;
 .tooltip2{
 position: relative;
 display: inline-block;
-
+z-index: 1;
 }
 
 .tooltip2 .tooltiptextwp {
@@ -74,12 +74,10 @@ visibility: visible;
 .contenedor_pagina_carta{
 display: grid;
 grid-template-columns: 1fr;
-grid-template-rows: 0.4fr 0.4fr 1.3fr 1.3fr 1.3fr 2fr 1fr;
+grid-template-rows: 0.4fr 0.4fr 2fr 1.8fr 1.7fr 1fr 0.7fr;
 FONT-WEIGHT: 100;
 FONT-WEIGHT: 100;
 font-variant: diagonal-fractions;
-font-variant: diagonal-fractions;
-grid-template-rows: 0.4fr 0.4.fr 2fr 2fr 2fr 4fr 0.7fr;
 grid-template-areas:
 "header"
 "nav"
@@ -107,9 +105,10 @@ background-position: center;
 background-size: cover;
 height:  360px;
 width: 360px;
+z-index: 1;
 /* z-index: 2; */
 position: absolute;
-top: 267px;
+top: 280px;
 }
 
 .carta_body_main_i{
@@ -120,11 +119,11 @@ background-image: radial-gradient(circle, rgb(255, 0, 0),rgb(243, 194, 194));
 padding: 20px;
 width: 360px;
 height: 124px;
-z-index: 2;
-position: relative;
+
+position: absolute;
 left: 0px;
-bottom: -360px;
-z-index: 2;
+top: 360px;
+z-index: 1;
 }
 
 .carta_body_main_i h2{
@@ -159,13 +158,13 @@ transform: translate(-50%, -50%);
 -ms-transform: translate(-50%, -50%);
 background-color: #f1f1f1;
 color: black;
-font-size: 20px;
+font-size: 16px;
 padding: 10px 16px;
 border: none;
 cursor: pointer;
 border-radius: 5px;
-position: relative;
-bottom: 0px;
+position: absolute;
+bottom: -140px;
 }    
 .carta_button:hover{       
 background-color: black;
@@ -223,3 +222,10 @@ left: -15px;
 
 
 }
+                                           
+                                           
+                                           
+                                           
+                                           
+                                           
+                                           

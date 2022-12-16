@@ -1,74 +1,16 @@
-// BUTTONS
-
-
-.button {
-    position: relative;
-    justify-content: center;
-    justify-items: center;
-    align-items: center;
-    align-content: center;
-    left: 25%;
-    right: 25%;
-    border-radius: 4px;
-    background-color: #1e22f4;
-    border: none;
-    color: #FFFFFF;
-    text-align: center;
-    font-size: 28px;
-    padding: 20px;
-    width: 200px;
-    transition: all 0.5s;
-    margin: 5px;
-    display: inline-block;
-    position: relative;
-    transition: 0.5s;
-        &:after {
-    content: '\00bb';
-    position: absolute;
-    opacity: 0;
-    top: 0;
-    right: -20px;
-    transition: 0.5s;
-    }
-    
-    &:hover {
-    padding-right: 25px;
-    }
-    
-    &:hover:after {
-    cursor: pointer;
-    opacity: 3;
-    right: 0;
-    }
+.boton_redondo{
+    background-color: blue;
+  border: none;
+  color: rgb(255, 255, 255);
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 50%;
+  position: absolute;
+  right:275px;
+  top:85px;
+  ;
 }
-
-
-.carta_button{
-    font-family: 'Poppins', sans-serif;
-        position: relative;
-        border-radius: 4px;
-        border: solid black 2px;
-        color: #FFFFFF;
-        font-size: 28px;
-        padding: 10px;
-        width: 200px;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        background-color: #f1f1f1;
-        color: black;
-        font-size: 16px;
-        padding: 16px 30px;
-        border: none;
-        cursor: pointer;
-        border-radius: 5px;
-    & :hover{       
-    background-color: black;
-    color: white;
-    
-    }    .container .btn:hover {
-    background-color: black;
-    color: white;
-    }
-    }
-

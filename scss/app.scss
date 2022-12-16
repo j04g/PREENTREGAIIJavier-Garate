@@ -1,14 +1,7 @@
 // UTILITIES
 
 @import './utilities/variables.scss';
-
-// QUERIES
-
-@import './vendors/queriesCarta.scss';
-@import './vendors/queriesIndex.scss';
-@import './vendors/queriesHistoria.scss';
-@import './vendors/queriesFranquicias.scss';
-@import './vendors/queriesTOL.scss';
+@import './vendors/queriesTypo.scss';
 
 
 // LAYOUT
@@ -21,21 +14,24 @@
 @import './components/etiquetasIndex.scss';
 @import './components/etiquetasCarta.scss';
 @import './components/etiquetasHistoria.scss';
-@import './components/etiquetasTiendaOnLine.scss';
+@import './components/etiquetasTOL.scss';
 @import './components/etiquetasFranquicias.scss';
 @import './components/buttons.scss';
 @import './components/cards.scss';
-@import './components/elementos-varios.scss';
-@import './components/galería.scss';
+
+
 @import './components/dropdowns.scss';
+@import './components/galerias.scss';
 
 // VENDORS
 
-@import './vendors/bootstraps.scss';
-@import './vendors/efectosgenericos.scss';
+@import './vendors/bootstrap.scss';
+@import './vendors/efectosfx.scss';
 
-// VIEWS
+// QUERIES
 
-@import './views/forms.scss';
-
-
+@import './vendors/queriesCarta.scss';
+@import './vendors/queriesIndex.scss';
+@import './vendors/queriesHistoria.scss';
+@import './vendors/queriesFranquicias.scss';
+@import './vendors/queriesTOL.scss';
